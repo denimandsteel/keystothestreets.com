@@ -1,9 +1,20 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "_variables";
+@import "_mixins";
 
 body {
+  font-family: $sans-serif;
   margin: 0; padding: 50px 0 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: rem(30);
 }
 
 header {
@@ -12,10 +23,17 @@ header {
   height: 50px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .contain {
   @include outer-container;
+}
+
+.button {
+  padding: 15px 50px;
+  background: white;
+  display: inline-block;
 }
 
 .pianos {
@@ -32,10 +50,86 @@ header {
 }
 
 .content {
-  background: red;
+  @include span-columns(12);
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+  p:first-of-type {
+    margin-top: 0;
+  }
 }
 .gallery {
-  background: green;
+  @include span-columns(12);
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+}
+
+.gallery-video {
+  display: none;
+  @include media($tablet) {
+    display: block;
+  }
+
+  .player {
+    background: black;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; overflow: hidden;
+    max-width: 100%;
+    iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .videos {
+    a {
+      @include span-columns(2);
+      // &:nth-child(6n) { margin-right: 0; }
+      &.active {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.gallery-photo {
+  a {
+    margin-bottom: flex-gutter();
+    @include span-columns(6 of 12);
+    @include omega(2n);
+    @include media($tablet) {
+      @include omega-reset(2n);
+      @include span-columns(3 of 12);
+      @include omega(4n);
+    }
+  }
+}
+
+.support {
+  background: $sky-blue;
+}
+
+.sponsor {
+  text-align: center;
+  margin-bottom: flex-gutter();
+
+  @include span-columns(6 of 12);
+  @include omega(2n);
+  @include media($tablet) {
+    @include omega-reset(2n);
+    @include span-columns(3 of 12);
+    @include omega(4n);
+  }
+}
+
+footer {
+  padding: 20px 0;
+  background-color: $black;
+  color: $white;
 }
 
 @import "_keys";
