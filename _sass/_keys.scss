@@ -80,7 +80,7 @@ $color-key-back-pressed: #1A1818;
       }
 
       // gradient hack
-      &:active {
+      &:active, &.active {
         .top {
           height: $height-key-white-top + $height-key-white-bottom;
           background-color: $color-key-white-pressed;
@@ -115,7 +115,7 @@ $color-key-back-pressed: #1A1818;
       }
       -webkit-transition: all .3s;
       transition: all .3s;
-      &:active {
+      &:active, &.active {
         background-color: $color-key-back-pressed;
         &:after {
           height: 10px;

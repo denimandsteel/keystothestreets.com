@@ -234,12 +234,12 @@ footer {
         bottom: 8.33333%;
         -webkit-transition: all .2s;
         transition: all .2s; }
-      .keys .key .key-white:active .top {
+      .keys .key .key-white:active .top, .keys .key .key-white.active .top {
         height: 93.33333%;
         background-color: #e4d2cd; }
-        .keys .key .key-white:active .top:after {
+        .keys .key .key-white:active .top:after, .keys .key .key-white.active .top:after {
           opacity: 1; }
-      .keys .key .key-white:active:after {
+      .keys .key .key-white:active:after, .keys .key .key-white.active:after {
         height: 6.25%;
         bottom: 4.16667%; }
     .keys .key .key-black {
@@ -261,9 +261,9 @@ footer {
         height: 15px;
         bottom: 0;
         background-color: #1A1818; }
-      .keys .key .key-black:active {
+      .keys .key .key-black:active, .keys .key .key-black.active {
         background-color: #1A1818; }
-        .keys .key .key-black:active:after {
+        .keys .key .key-black:active:after, .keys .key .key-black.active:after {
           height: 10px; }
 
 /*# sourceMappingURL=style.css.map */
