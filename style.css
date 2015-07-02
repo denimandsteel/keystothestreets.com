@@ -35,4 +35,56 @@ header {
   background: #eee;
   height: 300px; }
 
+.keys {
+  position: relative;
+  background-color: white; }
+  .keys .back-drop {
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: 89.33333%; }
+  .keys .key {
+    float: left;
+    height: 100%;
+    width: 8.33333%;
+    position: relative; }
+    .keys .key .key-white {
+      z-index: 1;
+      margin-right: 5%;
+      height: 100%;
+      width: 95%; }
+      .keys .key .key-white .top {
+        display: block;
+        background-color: #F8F0E6;
+        height: 83.33333%;
+        width: 100%;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+      .keys .key .key-white .bottom {
+        display: block;
+        background-color: #E1CFC9;
+        height: 8.33333%;
+        width: 95%;
+        position: absolute;
+        border: 0px solid;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        bottom: 8.33333%;
+        -webkit-transition: bottom .3s;
+        transition: bottom .3s; }
+      .keys .key .key-white:active .top {
+        height: 91.66667%;
+        background-color: #e4d2cd; }
+      .keys .key .key-white:active .bottom {
+        bottom: 0; }
+    .keys .key .key-black {
+      height: 68.33333%;
+      width: 46.66667%;
+      position: absolute;
+      left: 74.16667%;
+      top: 0;
+      z-index: 2;
+      background-color: black; }
+
 /*# sourceMappingURL=style.css.map */

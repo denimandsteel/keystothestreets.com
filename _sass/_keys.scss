@@ -1,0 +1,83 @@
+$number-of-white-keys: 12;
+
+$width-key-group:   1 / $number-of-white-keys * 100%;
+$width-key-white:   (19 / 20) * 100%;
+$width-gutter:      (1 / 20) * 100%;
+$width-key-black:   (56 / 120) * 100%;
+
+$height-key-white-top: (10 / 12) * 100%;
+$height-key-white-bottom: (1 / 12) * 100%;
+$height-key-black:   (205 / 300) * 100%;
+
+$height-back-drop:   (268 / 300) * 100%;
+
+$left-key-black: (89 / 120) * 100%;
+
+$color-key-white: #F8F0E6;
+$color-key-white-bottom: #E1CFC9;
+$color-key-white-pressed: rgb(228, 210, 205);
+
+
+.keys {
+  position: relative;
+  background-color: white;
+  .back-drop {
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: $height-back-drop;
+  }
+  .key {
+    float: left;
+    height: 100%;
+    width: $width-key-group;
+    position: relative;
+    .key-white {
+      z-index: 1;
+      margin-right: $width-gutter;
+      height: 100%;
+      width: $width-key-white;
+      .top {
+        display: block;
+        background-color: $color-key-white;
+        height: $height-key-white-top;
+        width: 100%;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+      }
+      .bottom {
+        display: block;
+        background-color: $color-key-white-bottom;
+        height: $height-key-white-bottom;
+        width: $width-key-white;
+        position: absolute;
+        border: 0px solid;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        bottom: $height-key-white-bottom;
+        -webkit-transition: bottom .3s;
+        transition: bottom .3s;
+      }
+
+      &:active {
+        .top {
+          height: $height-key-white-top + $height-key-white-bottom;
+          background-color: $color-key-white-pressed;
+        }
+        .bottom {
+          bottom: 0;
+        }
+      }
+    }
+    .key-black {
+      height: $height-key-black;
+      width: $width-key-black;
+      position: absolute;
+      left: $left-key-black;
+      top: 0;
+      z-index: 2;
+      background-color: black;
+    }
+  }
+}
