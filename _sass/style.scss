@@ -21,6 +21,10 @@ header {
 .pianos {
   background: $sky-blue;
 }
+.piano {
+  display: none;
+  &:first-child { display: block; }
+}
 
 .keys {
   background: #eee;

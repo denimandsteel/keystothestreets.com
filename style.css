@@ -26,6 +26,11 @@ header {
 .pianos {
   background: #28d2ff; }
 
+.piano {
+  display: none; }
+  .piano:first-child {
+    display: block; }
+
 .keys {
   background: #eee;
   height: 300px; }
