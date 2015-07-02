@@ -33,7 +33,13 @@ header {
 
 .keys {
   background: #eee;
-  height: 300px; }
+  height: 25vw; }
+
+.content {
+  background: red; }
+
+.gallery {
+  background: green; }
 
 .keys {
   position: relative;

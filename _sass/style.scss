@@ -28,7 +28,14 @@ header {
 
 .keys {
   background: #eee;
-  height: 300px;
+  height: 100vw * 0.25;
+}
+
+.content {
+  background: red;
+}
+.gallery {
+  background: green;
 }
 
 @import "_keys";
