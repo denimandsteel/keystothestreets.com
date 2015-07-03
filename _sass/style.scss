@@ -5,6 +5,7 @@
 
 body {
   font-family: $sans-serif;
+  color: $black;
   margin: 0; padding: 50px 0 0;
 }
 
@@ -15,6 +16,7 @@ img {
 
 h1 {
   font-size: rem(30);
+  margin-bottom: rem(10);
 }
 
 header {
@@ -32,8 +34,29 @@ header {
 
 .button {
   padding: 15px 50px;
-  background: white;
+  background: #fab515;
+  color: $white;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  text-decoration: none;
+  font-size: rem(20);
   display: inline-block;
+  @include transition(all 0.25s);
+  position: relative;
+  // border: 3px solid #fab515;
+  border-radius: 5px;
+  &:hover {
+    // border-color: darken(#fab515, 20);
+    // top: -3px;
+    @include transform(translateY(-3px));
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+  }
+  &:active {
+    // top: 1px;
+    @include transform(translateY(1px));
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+  }
+
 }
 
 .pianos {
@@ -72,7 +95,7 @@ header {
   }
 
   .player {
-    background: black;
+    background: #000;
     position: relative;
     padding-bottom: 56.25%;
     height: 0; overflow: hidden;
@@ -87,8 +110,10 @@ header {
   }
   .videos {
     a {
-      @include span-columns(2);
-      // &:nth-child(6n) { margin-right: 0; }
+      @include span-columns(2.4); // Ha! Decimal columns!
+      @include omega(5n);
+      margin-top: flex-gutter();
+
       &.active {
         opacity: 0.3;
       }
@@ -109,10 +134,18 @@ header {
   }
 }
 
-.support {
-  background: $sky-blue;
+.about, .support, .sponsors-wrap {
+  padding: 30px 0 50px;
 }
 
+.support {
+  background: $sky-blue;
+  color: $white;
+}
+
+.sponsors {
+  margin-top: 2em;
+}
 .sponsor {
   text-align: center;
   margin-bottom: flex-gutter();
@@ -124,12 +157,62 @@ header {
     @include span-columns(3 of 12);
     @include omega(4n);
   }
+
+
+  a {
+    color: $black;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+
+  	line-height: 44px;
+    @include perspective(1000px);
+
+    span {
+    	position: relative;
+    	display: inline-block;
+    	padding: 0 14px;
+    	background: $white;
+    	-webkit-transition: -webkit-transform 0.3s;
+    	-moz-transition: -moz-transform 0.3s;
+    	transition: transform 0.3s;
+      @include transform-origin(50% 0%);
+      @include transform-style(preserve-3d);
+
+      &::before {
+        border-radius: 4px;
+      	position: absolute;
+      	top: 100%;
+      	left: 0;
+      	width: 100%;
+      	height: 100%;
+        color: $white;
+      	background: $black;
+      	content: attr(data-hover);
+        @include transition(background 0.3s);
+      	@include transform(rotateX(-90deg));
+        @include transform-origin(50% 0%);
+      }
+    }
+
+    &:hover span,
+    &:focus span {
+      @include transform(rotateX(90deg) translateY(-22px));
+      &::before {
+      	background: $black;
+      }
+    }
+  }
+
 }
 
 footer {
+  text-align: center;
   padding: 20px 0;
   background-color: $black;
   color: $white;
+  a {
+    color: $white;
+  }
 }
 
 @import "_keys";
