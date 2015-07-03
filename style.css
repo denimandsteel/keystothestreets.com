@@ -527,7 +527,8 @@ footer {
     float: left;
     height: 100%;
     width: 8.33333%;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .keys .key .key-white {
       z-index: 1;
       margin-right: 5%;
