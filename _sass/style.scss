@@ -7,7 +7,8 @@ body {
   background: $black;
   font-family: $sans-serif;
   color: $black;
-  margin: 0; padding: 50px 0 0;
+  margin: 0;
+  padding: 108px 0 0;
 }
 
 img {
@@ -22,15 +23,6 @@ h1 {
   @include media($tablet) {
     font-size: rem(30);
   }
-}
-
-header {
-  background: $black;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
 }
 
 .contain {
@@ -73,6 +65,65 @@ header {
     box-shadow: 0px 0px 0px rgba(0,0,0,0.3);
   }
 
+}
+
+header {
+  background: $black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  display: block;
+  background: url(images/logo.png) no-repeat;
+  background-size: contain;
+  width: (500px/5);
+  height: (390px/5);
+  text-indent: -9999px;
+  float: left;
+}
+
+
+.primary {
+  float: left;
+  ul {
+    color: white;
+    list-style-type: none;
+    margin: 0; padding: 0;
+    padding-left: 20px;
+    li {
+      float: left;
+      margin-top: 20px;
+      margin-left: 30px;
+      a {
+        padding: 10px;
+        color: $white;
+        text-decoration: none;
+        font-size: rem(20);
+      }
+    }
+  }
+}
+
+.social {
+  float: right;
+  ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    li {
+      float: left;
+      margin-top: 20px;
+      margin-left: 30px;
+      a {
+        padding: 10px;
+        color: $white;
+        text-decoration: none;
+        font-size: rem(20);
+      }
+    }
+  }
 }
 
 .pianos {
