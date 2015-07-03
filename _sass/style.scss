@@ -8,7 +8,10 @@ body {
   font-family: $sans-serif;
   color: $black;
   margin: 0;
-  padding: 108px 0 0;
+  padding: 90px 0 0;
+  @include media($tablet) {
+    padding-top: 108px;
+  }
 }
 
 img {
@@ -36,8 +39,8 @@ h1 {
 .button {
   float: left;
   margin-right: 20px;
-  padding: 15px 30px;
-  background: #fab515;
+  padding: 15px 25px;
+  background: $yellow;
   color: $white;
   text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
@@ -46,15 +49,21 @@ h1 {
 
   @include media($tablet) {
     font-size: rem(20);
+    padding: 15px 30px;
+  }
+  @include media($desktop) {
     padding: 15px 50px;
   }
   display: inline-block;
   @include transition(all 0.25s);
   position: relative;
-  // border: 3px solid #fab515;
+  // border: 3px solid $yellow;
   border-radius: 5px;
+
+  &.email { margin-right: 0; }
+
   &:hover {
-    // border-color: darken(#fab515, 20);
+    // border-color: darken($yellow, 20);
     // top: -3px;
     @include transform(translateY(-3px));
     box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
@@ -79,8 +88,13 @@ header {
   display: block;
   background: url(images/logo.png) no-repeat;
   background-size: contain;
-  width: (500px/5);
-  height: (390px/5);
+  width: 80px;
+  height: 65px;
+  @include media($tablet) {
+    width: (500px/5);
+    height: (390px/5);
+  }
+
   text-indent: -9999px;
   float: left;
 }
@@ -92,16 +106,29 @@ header {
     color: white;
     list-style-type: none;
     margin: 0; padding: 0;
-    padding-left: 20px;
+    padding-left: 5px;
+    @include media($tablet) {
+      padding-left: 20px;
+    }
     li {
       float: left;
-      margin-top: 20px;
-      margin-left: 30px;
+      margin-top: 15px;
+      margin-left: 8px;
+      @include media($tablet) {
+        margin-top: 20px;
+        margin-left: 30px;
+      }
       a {
         padding: 10px;
         color: $white;
         text-decoration: none;
-        font-size: rem(20);
+        font-size: rem(18);
+        @include media($tablet) {
+          font-size: rem(20);
+        }
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }
@@ -109,19 +136,57 @@ header {
 
 .social {
   float: right;
+  display: none;
+  @include media($tablet) {
+    display: block;
+  }
   ul {
     list-style-type: none;
     margin: 0; padding: 0;
     li {
       float: left;
-      margin-top: 20px;
-      margin-left: 30px;
+      margin-top: 10px;
+      margin-left: 20px;
       a {
-        padding: 10px;
+        // padding: 10px;
+        text-indent: -9999px;
         color: $white;
+        background: $white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
         text-decoration: none;
         font-size: rem(20);
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        &.facebook { background-image: url(images/social/facebook.svg); }
+        &.twitter { background-image: url(images/social/twitter.svg); }
+        &.youtube { background-image: url(images/social/youtube.svg); }
+        &.instagram { background-image: url(images/social/instagram.svg); }
+        &:hover {
+          background-color: $yellow;
+        }
       }
+    }
+  }
+  &.mobile-social {
+    padding-top: 10px;
+    text-align: center;
+    background: white;
+    display: block;
+    float: none;
+    @include clearfix;
+    ul li {
+      float: none;
+      display: inline-block;
+      &:first-of-type {
+         margin-left: 0;
+      }
+    }
+    @include media($tablet) {
+      display: none;
     }
   }
 }
@@ -297,7 +362,7 @@ header {
       	left: 0;
       	width: 100%;
       	height: 100%;
-        background: #fab515;
+        background: $yellow;
         color: $white;
         text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
         box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
@@ -312,7 +377,7 @@ header {
     &:focus span {
       @include transform(rotateX(90deg) translateY(-22px));
       &::before {
-      	background: #fab515;
+      	background: $yellow;
         text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
         box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
       }
@@ -326,8 +391,36 @@ footer {
   padding: 20px 0;
   background-color: $black;
   color: $white;
+  ul {
+    list-style-type: none;
+    padding: 0; margin: 0;
+    display: inline-block;
+
+    // &:last-of-type:after { content: none; }
+
+    li {
+      &:first-of-type, &:nth-child(2) {
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      &:first-of-type:after { content: ' · '; }
+      @include media(max-width 350px) {
+        &:last-of-type {
+          font-size: rem(14px);
+        }
+      }
+      @include media($tablet) {
+        display: inline-block;
+        &:after { content: ' · '; }
+        &:last-of-type:after { content: none; }
+      }
+    }
+  }
   a {
     color: $white;
+    &:hover {
+      color: $yellow;
+    }
   }
 }
 
