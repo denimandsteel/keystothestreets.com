@@ -4,42 +4,58 @@
 @import "_mixins";
 
 body {
+  background: $black;
   font-family: $sans-serif;
   color: $black;
   margin: 0; padding: 50px 0 0;
 }
 
 img {
-  width: 100%;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
-  font-size: rem(30);
+  font-size: rem(23);
   margin-bottom: rem(10);
+  @include media($tablet) {
+    font-size: rem(30);
+  }
 }
 
 header {
   background: $black;
   width: 100%;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1;
 }
 
 .contain {
   @include outer-container;
+  padding: 0 10px;
+  @include media($desktop) {
+    padding: 0;
+  }
 }
 
 .button {
-  padding: 15px 50px;
+  float: left;
+  margin-right: 20px;
+  padding: 15px 30px;
   background: #fab515;
   color: $white;
   text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   text-decoration: none;
-  font-size: rem(20);
+  font-size: rem(18);
+
+  @include media($tablet) {
+    font-size: rem(20);
+    padding: 15px 50px;
+  }
   display: inline-block;
   @include transition(all 0.25s);
   position: relative;
@@ -65,6 +81,28 @@ header {
 .piano {
   display: none;
   &:first-child { display: block; }
+
+  .location, .information {
+    display: none;
+  }
+  .scene {
+    height: 175vw * (752/1440); // We can be a pixel off sometimes.
+    background-position: center bottom;
+    background-size: cover;
+    @include media($tablet) {
+      height: 75vw * (752/1440); // We can be a pixel off sometimes.
+    }
+  }
+}
+
+.canada-place {
+  .scene {
+    background-image: url(images/pianos/canada-place.svg);
+  }
+}
+
+.tagline {
+  display: none;
 }
 
 .keys {
@@ -82,8 +120,10 @@ header {
   }
 }
 .gallery {
+  margin-top: 20px;
   @include span-columns(12);
   @include media($tablet) {
+    margin-top: 0;
     @include span-columns(6);
   }
 }
@@ -110,9 +150,17 @@ header {
   }
   .videos {
     a {
-      @include span-columns(2.4); // Ha! Decimal columns!
-      @include omega(5n);
       margin-top: flex-gutter();
+      @include span-columns(4);
+      @include omega(3n);
+      &:last-child { display: none; }
+
+      @include media($desktop) {
+        @include omega-reset(3n);
+        @include span-columns(2.4); // Ha! Decimal columns!
+        @include omega(5n);
+        &:last-child { display: block; }
+      }
 
       &.active {
         opacity: 0.3;
@@ -135,12 +183,25 @@ header {
 }
 
 .about, .support, .sponsors-wrap {
-  padding: 30px 0 50px;
+  padding: 10px 0 15px;
+  @include media($desktop) {
+    padding: 30px 0 50px;
+  }
+}
+
+.about, .sponsors-wrap {
+  background: $white;
 }
 
 .support {
   background: $sky-blue;
   color: $white;
+  // &.contain {
+  //   padding: 0 10px;
+  //   @include media($desktop) {
+  //     padding: 30px 0 50px;
+  //   }
+  // }
 }
 
 .sponsors {
@@ -162,7 +223,7 @@ header {
   a {
     color: $black;
     text-decoration: none;
-    letter-spacing: -0.5px;
+    // letter-spacing: -0.5px;
 
   	line-height: 44px;
     @include perspective(1000px);
@@ -185,8 +246,10 @@ header {
       	left: 0;
       	width: 100%;
       	height: 100%;
+        background: #fab515;
         color: $white;
-      	background: $black;
+        text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
       	content: attr(data-hover);
         @include transition(background 0.3s);
       	@include transform(rotateX(-90deg));
@@ -198,7 +261,9 @@ header {
     &:focus span {
       @include transform(rotateX(90deg) translateY(-22px));
       &::before {
-      	background: $black;
+      	background: #fab515;
+        text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
       }
     }
   }
