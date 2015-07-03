@@ -24,6 +24,10 @@ $color-key-back-pressed: #1A1818;
 .keys {
   position: relative;
   background-color: white;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
   .back-drop {
     z-index: 0;
     width: 100%;
@@ -47,11 +51,11 @@ $color-key-back-pressed: #1A1818;
         background-color: $color-key-white;
         height: $height-key-white-top;
         width: 100%;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
         &:after {
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all .2s;
+          transition: all .2s;
           content: " ";
           height: 100%;
           width: 100%;
@@ -71,12 +75,12 @@ $color-key-back-pressed: #1A1818;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         bottom: $height-key-white-bottom;
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
       }
 
       // gradient hack
-      &:active {
+      &:active, &.active {
         .top {
           height: $height-key-white-top + $height-key-white-bottom;
           background-color: $color-key-white-pressed;
@@ -111,7 +115,7 @@ $color-key-back-pressed: #1A1818;
       }
       -webkit-transition: all .3s;
       transition: all .3s;
-      &:active {
+      &:active, &.active {
         background-color: $color-key-back-pressed;
         &:after {
           height: 10px;

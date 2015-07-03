@@ -278,7 +278,14 @@ footer {
 
 .keys {
   position: relative;
-  background-color: white; }
+  background-color: white;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none; }
   .keys .back-drop {
     z-index: 0;
     width: 100%;
@@ -301,11 +308,11 @@ footer {
         background-color: #F8F0E6;
         height: 85%;
         width: 100%;
-        -webkit-transition: all .3s;
-        transition: all .3s; }
+        -webkit-transition: all .2s;
+        transition: all .2s; }
         .keys .key .key-white .top:after {
-          -webkit-transition: all .3s;
-          transition: all .3s;
+          -webkit-transition: all .2s;
+          transition: all .2s;
           content: " ";
           height: 100%;
           width: 100%;
@@ -323,14 +330,14 @@ footer {
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         bottom: 8.33333%;
-        -webkit-transition: all .3s;
-        transition: all .3s; }
-      .keys .key .key-white:active .top {
+        -webkit-transition: all .2s;
+        transition: all .2s; }
+      .keys .key .key-white:active .top, .keys .key .key-white.active .top {
         height: 93.33333%;
         background-color: #e4d2cd; }
-        .keys .key .key-white:active .top:after {
+        .keys .key .key-white:active .top:after, .keys .key .key-white.active .top:after {
           opacity: 1; }
-      .keys .key .key-white:active:after {
+      .keys .key .key-white:active:after, .keys .key .key-white.active:after {
         height: 6.25%;
         bottom: 4.16667%; }
     .keys .key .key-black {
@@ -352,9 +359,9 @@ footer {
         height: 15px;
         bottom: 0;
         background-color: #1A1818; }
-      .keys .key .key-black:active {
+      .keys .key .key-black:active, .keys .key .key-black.active {
         background-color: #1A1818; }
-        .keys .key .key-black:active:after {
+        .keys .key .key-black:active:after, .keys .key .key-black.active:after {
           height: 10px; }
 
 /*# sourceMappingURL=style.css.map */
