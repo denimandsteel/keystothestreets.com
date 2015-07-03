@@ -36,16 +36,26 @@ h1 {
   }
 }
 
+.pin {
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+  background: url(images/pin.svg) left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .button {
-  float: left;
   margin-right: 20px;
-  padding: 15px 25px;
   background: $yellow;
   color: $white;
   text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
   text-decoration: none;
   font-size: rem(18);
+  padding: 15px 25px;
 
   @include media($tablet) {
     font-size: rem(20);
@@ -98,7 +108,6 @@ header {
   text-indent: -9999px;
   float: left;
 }
-
 
 .primary {
   float: left;
@@ -197,16 +206,67 @@ header {
 .piano {
   display: none;
   &:first-child { display: block; }
-
-  .location, .information {
-    display: none;
+  position: relative;
+  height: 175vw * (752/1440); // We can be a pixel off sometimes.
+  @include media($tablet) {
+    height: 100vw * (752/1440); // We can be a pixel off sometimes.
   }
+
   .scene {
-    height: 175vw * (752/1440); // We can be a pixel off sometimes.
+    height: 100%;
     background-position: center bottom;
     background-size: cover;
-    @include media($tablet) {
-      height: 75vw * (752/1440); // We can be a pixel off sometimes.
+  }
+}
+
+.location, .information {
+  // display: none;
+}
+
+.information {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+
+.scroll {
+  background: url(images/scroll.svg) top left;
+  background-size: contain;
+  width: 391px;
+  padding: 20px 30px;
+  margin: 20px auto;
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+  p {
+    margin: 0.5em 0 0;
+    text-align: center;
+  }
+  .button {
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 10px;
+
+    font-size: rem(18);
+    padding: 10px 25px;
+    //
+    // @include media($tablet) {
+    //   font-size: rem(20);
+    //   padding: 15px 30px;
+    // }
+    // @include media($desktop) {
+    //   padding: 15px 50px;
+    // }
+  }
+  @include media(max-width 400px) {
+    font-size: 0.8rem;
+    width: 90%;
+    padding: 20px 20px;
+    margin: 0px auto;
+    .button {
+      font-size: rem(16);
     }
   }
 }

@@ -39,16 +39,25 @@ h1 {
     .contain {
       padding: 0; } }
 
+.pin {
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+  background: url(images/pin.svg) left bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 .button {
-  float: left;
   margin-right: 20px;
-  padding: 15px 25px;
   background: #fab515;
   color: #fff;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   font-size: 1.125rem;
+  padding: 15px 25px;
   display: inline-block;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
@@ -189,18 +198,52 @@ header {
   background: #28d2ff; }
 
 .piano {
-  display: none; }
+  display: none;
+  position: relative;
+  height: 91.38889vw; }
   .piano:first-child {
     display: block; }
-  .piano .location, .piano .information {
-    display: none; }
+  @media screen and (min-width: 768px) {
+    .piano {
+      height: 52.22222vw; } }
   .piano .scene {
-    height: 91.38889vw;
+    height: 100%;
     background-position: center bottom;
     background-size: cover; }
-    @media screen and (min-width: 768px) {
-      .piano .scene {
-        height: 39.16667vw; } }
+
+.information {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.scroll {
+  background: url(images/scroll.svg) top left;
+  background-size: contain;
+  width: 391px;
+  padding: 20px 30px;
+  margin: 20px auto; }
+  .scroll h3 {
+    text-align: center;
+    margin: 0; }
+  .scroll p {
+    margin: 0.5em 0 0;
+    text-align: center; }
+  .scroll .button {
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: 1.125rem;
+    padding: 10px 25px; }
+  @media screen and (max-width: 400px) {
+    .scroll {
+      font-size: 0.8rem;
+      width: 90%;
+      padding: 20px 20px;
+      margin: 0px auto; }
+      .scroll .button {
+        font-size: 1rem; } }
 
 .canada-place .scene {
   background-image: url(images/pianos/canada-place.svg); }
