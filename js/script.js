@@ -37,76 +37,74 @@ $(function() {
 
   // mouse clicks on keys
   $('.key-white, .key-black').mousedown(function() {
-    console.log($(this).attr('id'));
     key_sounds[$(this).attr('id')].play();
   });
 
   // keyboard playing
   $(document).on('keyup keydown', function(e) {
-    console.log(e.which);
     var note = "";
-    var c = String.fromCharCode(e.which).toLowerCase();
-    console.log(c);
-    switch(c) {
-      case 'a':
+    switch(e.which) {
+      case 81:
         note = "c1";
         break;
-      case 'w':
+      case 50:
         note = "c1s";
         break;
-      case 's':
+      case 87:
         note = "d1";
         break;
-      case 'e':
+      case 51:
         note = "d1s";
         break;
-      case 'd':
+      case 69:
         note = "e1";
         break;
-      case 'f':
+      case 82:
         note = "f1";
         break;
-      case 't':
+      case 53:
         note = "f1s";
         break;
-      case 'g':
+      case 84:
         note = "g1";
         break;
-      case 'y':
+      case 54:
         note = "g1s";
         break;
-      case 'h':
+      case 89:
         note = "a2";
         break;
-      case 'u':
+      case 55:
         note = "a2s";
         break;
-      case 'j':
+      case 85:
         note = "b2";
         break;
-      case 'k':
+      case 73:
         note = "c2";
         break;
-      case 'o':
+      case 57:
         note = "c2s";
         break;
-      case 'l':
+      case 79:
         note = "d2";
         break;
-      case 'p':
+      case 48:
         note = "d2s";
         break;
-      case ';':
+      case 80:
         note = "e2";
         break;
-      case '\'':
+      case 219:
         note = "f2";
         break;
-      case ']':
+      case 187:
         note = "f2s";
         break;
+      case 221:
+        note = "g2";
+        break;
     }
-    console.log(note);
     if (note != "") {
       if (e.type == 'keydown') {
         key_sounds[note].play();  
