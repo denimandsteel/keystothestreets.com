@@ -4,7 +4,7 @@
 @import "_mixins";
 
 body {
-  background: $black;
+  background: $pure-black;
   font-family: $sans-serif;
   color: $black;
   margin: 0;
@@ -88,7 +88,7 @@ h1 {
 }
 
 header {
-  background: $black;
+  background: $pure-black;
   width: 100%;
   position: absolute;
   top: 0;
@@ -203,31 +203,122 @@ header {
 
 .pianos {
   background: $sky-blue;
-}
-.piano {
-  display: none;
-  &:first-child { display: block; }
   position: relative;
   height: 175vw * (752/1440); // We can be a pixel off sometimes.
   @include media($tablet) {
     height: 100vw * (752/1440); // We can be a pixel off sometimes.
   }
+}
 
-  .scene {
-    height: 100%;
-    background-position: center bottom;
-    background-size: cover;
+.slide-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  // overflow: scroll;
+}
+.slide {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+%slide-num {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+}
+
+@for $num from 1 through 5 {
+  .slide-#{$num} {
+    @extend %slide-num;
+    width: 100% * $num;
+    & .slide {
+      width: 100% / $num;
+    }
+  }
+  .index-#{$num} {
+    z-index: $num;
   }
 }
+
+.switcher-center {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.switcher {
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+  .previous, .next {
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 100%;
+    color: $white;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+    background: $yellow url(images/arrow-previous.svg) center center no-repeat;
+    background-size: contain;
+  }
+  .next {
+    left: auto;
+    right: 0;
+    background-image: url(images/arrow-next.svg);
+  }
+}
+
+.pianos {
+  .slide-wrap.slide-wrap-slowest > div {
+    @include transition-delay(0.5s);
+    @include transition(transform 1.25s ease-in-out);
+  }
+  .slide-wrap.slide-wrap-slow > div {
+    // @include transition-delay(0.3s);
+    @include transition(transform 1s ease-in-out);
+  }
+  .slide-wrap.slide-wrap-fast > div {
+    // @include transition-delay(0.75s);
+    @include transition(transform 0.75s ease-in-out);
+  }
+  &.cambie-bridge {
+    .slide-wrap > div {
+      @include transform(translateX(-50%));
+    }
+  }
+}
+
+// .pianos-wrapper {
+//   width: 200%;
+//   position: absolute;
+//   top: 0; left: 0;
+// }
+// .piano {
+//   width: 50%;
+//   height:100%;
+//   float: left;
+//   position: relative;
+//
+//   // display: none;
+//   // &:first-child { display: block; }
+// }
 
 .location, .information {
   // display: none;
 }
 
 .information {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
+  // position: absolute;
+  // top: 0; left: 0;
+  // width: 100%;
 }
 
 .scroll {
@@ -244,11 +335,15 @@ header {
     margin: 0.5em 0 0;
     text-align: center;
   }
+  a {
+    color: $black;
+  }
   .button {
     float: none;
     display: inline-block;
     margin-right: 0;
     margin-top: 10px;
+    color: $white;
 
     font-size: rem(18);
     padding: 10px 25px;
@@ -272,9 +367,22 @@ header {
   }
 }
 
-.canada-place {
-  .scene {
+
+.scene {
+  height: 100%;
+  background-position: center bottom;
+  background-size: cover;
+  &.canada-place {
     background-image: url(images/pianos/canada-place.svg);
+    &-piano {
+      background-image: url(images/pianos/canada-place-piano.svg);
+    }
+  }
+  &.cambie-bridge {
+    background-image: url(images/pianos/cambie-bridge.svg);
+    &-piano {
+      background-image: url(images/pianos/cambie-bridge-piano.svg);
+    }
   }
 }
 
@@ -452,7 +560,7 @@ header {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: $black;
+  background-color: $pure-black;
   color: $white;
   ul {
     list-style-type: none;

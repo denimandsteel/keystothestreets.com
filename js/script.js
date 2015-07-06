@@ -107,13 +107,28 @@ $(function() {
     }
     if (note != "") {
       if (e.type == 'keydown') {
-        key_sounds[note].play();  
+        key_sounds[note].play();
         $("#" + note).addClass('active');
       } else {
         $("#" + note).removeClass('active');
       }
-      
+
     };
-    
+
+  });
+
+  var pianos = [
+    'canada-place',
+    'cambie-bridge',
+  ];
+  var index = 0;
+
+  $('.previous').click(function() {
+    index -= 1;
+    $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
+  });
+  $('.next').click(function() {
+    index += 1;
+    $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
   });
 });
