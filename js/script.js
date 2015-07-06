@@ -116,4 +116,8 @@ $(function() {
     };
     
   });
+
+  $(".keyboard").click(function() {
+    $(".keys").toggleClass('show-hints');
+  });
 });
