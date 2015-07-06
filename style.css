@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #000;
   font-family: "Open Sans", sans-serif;
   color: #444;
   margin: 0;
@@ -85,7 +85,7 @@ h1 {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
 header {
-  background: #444;
+  background: #000;
   width: 100%;
   position: absolute;
   top: 0;
@@ -191,27 +191,123 @@ header {
         display: none; } }
 
 .pianos {
-  background: #28d2ff; }
-
-.piano {
-  display: none;
+  background: #28d2ff;
   position: relative;
   height: 91.38889vw; }
-  .piano:first-child {
-    display: block; }
   @media screen and (min-width: 768px) {
-    .piano {
+    .pianos {
       height: 52.22222vw; } }
-  .piano .scene {
-    height: 100%;
-    background-position: center bottom;
-    background-size: cover; }
 
-.information {
+.slide-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.slide {
+  float: left;
+  position: relative;
+  height: 100%; }
+
+.slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%; }
+
+.slide-1 {
   width: 100%; }
+  .slide-1 .slide {
+    width: 100%; }
+
+.index-1 {
+  z-index: 1; }
+
+.slide-2 {
+  width: 200%; }
+  .slide-2 .slide {
+    width: 50%; }
+
+.index-2 {
+  z-index: 2; }
+
+.slide-3 {
+  width: 300%; }
+  .slide-3 .slide {
+    width: 33.33333%; }
+
+.index-3 {
+  z-index: 3; }
+
+.slide-4 {
+  width: 400%; }
+  .slide-4 .slide {
+    width: 25%; }
+
+.index-4 {
+  z-index: 4; }
+
+.slide-5 {
+  width: 500%; }
+  .slide-5 .slide {
+    width: 20%; }
+
+.index-5 {
+  z-index: 5; }
+
+.switcher-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4; }
+
+.switcher {
+  width: 550px;
+  margin: 0 auto;
+  position: relative; }
+  .switcher .previous, .switcher .next {
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 100%;
+    color: #fff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    background: #fab515 url(images/arrow-previous.svg) center center no-repeat;
+    background-size: contain; }
+  .switcher .next {
+    left: auto;
+    right: 0;
+    background-image: url(images/arrow-next.svg); }
+
+.pianos .slide-wrap.slide-wrap-slowest > div {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transition: -webkit-transform 1.25s ease-in-out;
+  -moz-transition: -moz-transform 1.25s ease-in-out;
+  transition: transform 1.25s ease-in-out; }
+.pianos .slide-wrap.slide-wrap-slow > div {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: -moz-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out; }
+.pianos .slide-wrap.slide-wrap-fast > div {
+  -webkit-transition: -webkit-transform 0.75s ease-in-out;
+  -moz-transition: -moz-transform 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out; }
+.pianos.cambie-bridge .slide-wrap > div {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .scroll {
   background: url(images/scroll.svg) top left;
@@ -225,11 +321,14 @@ header {
   .scroll p {
     margin: 0.5em 0 0;
     text-align: center; }
+  .scroll a {
+    color: #444; }
   .scroll .button {
     float: none;
     display: inline-block;
     margin-right: 0;
     margin-top: 10px;
+    color: #fff;
     font-size: 1.125rem;
     padding: 10px 25px; }
   @media screen and (max-width: 400px) {
@@ -241,8 +340,18 @@ header {
       .scroll .button {
         font-size: 1rem; } }
 
-.canada-place .scene {
-  background-image: url(images/pianos/canada-place.svg); }
+.scene {
+  height: 100%;
+  background-position: center bottom;
+  background-size: cover; }
+  .scene.canada-place {
+    background-image: url(images/pianos/canada-place.svg); }
+    .scene.canada-place-piano {
+      background-image: url(images/pianos/canada-place-piano.svg); }
+  .scene.cambie-bridge {
+    background-image: url(images/pianos/cambie-bridge.svg); }
+    .scene.cambie-bridge-piano {
+      background-image: url(images/pianos/cambie-bridge-piano.svg); }
 
 .tagline {
   display: none; }
@@ -477,7 +586,7 @@ header {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #444;
+  background-color: #000;
   color: #fff; }
   footer ul {
     list-style-type: none;

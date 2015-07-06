@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="1440px" height="752px" viewBox="0 0 1440 752" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
+    <title>canada-place</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Artboard" sketch:type="MSArtboardGroup">
+        <g id="canada-place" sketch:type="MSArtboardGroup">
             <g id="_x31_BG" sketch:type="MSLayerGroup" fill="#28D2FF">
                 <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="0" y="0" width="1440" height="664.629"></rect>
             </g>
@@ -80,49 +80,7 @@
                 <path d="M28.491,511.064 C28.491,503.957 34.252,498.194 41.36,498.194 C48.467,498.194 54.229,503.957 54.229,511.064" id="Shape" fill="#A7A7A5" sketch:type="MSShapeGroup"></path>
                 <path d="M430.905,567.857 C430.905,560.75 436.667,554.987 443.774,554.987 C450.882,554.987 456.644,560.749 456.644,567.857" id="Shape" fill="#EBEBEA" sketch:type="MSShapeGroup"></path>
                 <path d="M101.566,335.805 L0,335.805 L0,362.651 L142.063,362.651 L101.566,335.805 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                <path d="M650.065,422.582 L637.065,400.707 L490.444,400.877 L513.838,422.484 L650.065,422.582 Z" id="Shape" fill="#FBC851" sketch:type="MSShapeGroup"></path>
                 <path d="M657.565,312.929 C657.565,327.288 669.206,338.929 683.565,338.929 C697.924,338.929 709.565,327.288 709.565,312.929 L657.565,312.929 L657.565,312.929 Z" id="Shape" fill="#28D2FF" sketch:type="MSShapeGroup"></path>
-            </g>
-            <g id="piano" sketch:type="MSLayerGroup" transform="translate(484.000000, 473.000000)">
-                <g id="Group" sketch:type="MSShapeGroup">
-                    <path d="M450.99,15.322 C450.99,6.943 444.197,0.15 435.818,0.15 L36.21,0.15 C27.831,0.15 21.039,6.942 21.039,15.322 L21.039,109.706 L450.99,109.706 L450.99,15.322 L450.99,15.322 Z" id="Shape" fill="#DFD7C1"></path>
-                    <g transform="translate(236.000000, 12.000000)" id="Rectangle-path">
-                        <rect fill="#FFFFFF" x="0.682" y="0.265" width="36.333" height="43.551"></rect>
-                        <rect fill="#323232" x="4.265" y="3.948" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="4.265" y="9.602" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="4.265" y="15.256" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="4.265" y="20.91" width="29.167" height="2.85"></rect>
-                        <rect fill="#323232" x="4.265" y="26.564" width="29.167" height="2.85"></rect>
-                        <rect fill="#323232" x="4.265" y="32.218" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="4.265" y="37.873" width="29.167" height="2.849"></rect>
-                    </g>
-                    <g transform="translate(286.000000, 24.000000)" id="Rectangle-path">
-                        <rect fill="#FFFFFF" x="0.348" y="0.161" width="36.333" height="43.551"></rect>
-                        <rect fill="#323232" x="3.931" y="3.843" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="3.931" y="9.498" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="3.931" y="15.151" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="3.931" y="20.805" width="29.167" height="2.85"></rect>
-                        <rect fill="#323232" x="3.931" y="26.459" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="3.931" y="32.114" width="29.167" height="2.849"></rect>
-                        <rect fill="#323232" x="3.931" y="37.768" width="29.167" height="2.849"></rect>
-                    </g>
-                    <rect id="Rectangle-path" fill="#C1BBA9" x="21.039" y="109.706" width="429.951" height="81.739"></rect>
-                    <rect id="Rectangle-path" fill="#DFD7C1" x="6.458" y="76.566" width="23.395" height="114.879"></rect>
-                    <rect id="Rectangle-path" fill="#DFD7C1" x="442.177" y="76.566" width="23.394" height="114.879"></rect>
-                    <path d="M471.503,59.675 C471.503,57.543 469.775,55.816 467.644,55.816 L4.386,55.816 C2.254,55.816 0.527,57.544 0.527,59.675 L0.527,84.238 C0.527,86.37 2.255,88.097 4.386,88.097 L467.251,88.097 C469.6,88.097 471.503,86.194 471.503,83.845 L471.503,59.675 L471.503,59.675 Z" id="Shape" fill="#FAEFD5"></path>
-                    <rect id="Rectangle-path" opacity="0.7" fill="#0079C0" x="49.412" y="0.15" width="8.985" height="191.701"></rect>
-                    <rect id="Rectangle-path" opacity="0.7" fill="#FFCF01" x="70.022" y="0.15" width="8.985" height="191.701"></rect>
-                    <rect id="Rectangle-path" opacity="0.7" fill="#E42F40" x="90.632" y="0.15" width="8.985" height="191.701"></rect>
-                    <rect id="Rectangle-path" opacity="0.7" fill="#129771" x="111.242" y="0.15" width="8.985" height="191.701"></rect>
-                    <path d="M433.015,78.097 L37.505,78.097 L37.505,73.675 C37.505,71.543 39.233,69.816 41.364,69.816 L429.155,69.816 C431.287,69.816 433.014,71.544 433.014,73.675 L433.014,78.097 L433.015,78.097 Z" id="Shape" fill="#323232"></path>
-                    <path d="M447.505,81.957 C447.505,79.826 445.777,78.098 443.646,78.098 L26.874,78.098 C24.742,78.098 23.015,79.826 23.015,81.957 L23.015,87.951 L447.505,87.951 L447.505,81.957 L447.505,81.957 Z" id="Shape" fill="#FFFFFF"></path>
-                </g>
-                <g id="Group" transform="translate(61.000000, 148.000000)" sketch:type="MSShapeGroup">
-                    <rect id="Rectangle-path" fill="#FAEFD5" x="8.215" y="15.312" width="333.6" height="35.423"></rect>
-                    <rect id="Rectangle-path" fill="#FAEFD5" x="8.215" y="23.736" width="20.67" height="73.61"></rect>
-                    <rect id="Rectangle-path" fill="#FAEFD5" x="321.145" y="23.736" width="20.67" height="73.61"></rect>
-                    <path d="M349.314,4.693 C349.314,2.561 347.586,0.834 345.455,0.834 L4.574,0.834 C2.442,0.834 0.715,2.562 0.715,4.693 L0.715,25.931 C0.715,28.063 2.443,29.79 4.574,29.79 L345.455,29.79 C347.587,29.79 349.314,28.062 349.314,25.931 L349.314,4.693 L349.314,4.693 Z" id="Shape" fill="#6E3F30"></path>
-                </g>
             </g>
             <g id="_x31_Boat" sketch:type="MSLayerGroup" transform="translate(1081.000000, 487.000000)">
                 <g id="Group" sketch:type="MSShapeGroup">
