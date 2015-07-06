@@ -31,7 +31,7 @@ h1 {
 .contain {
   @include outer-container;
   padding: 0 10px;
-  @include media($desktop) {
+  @include media($desktop-big) {
     padding: 0;
   }
 }
@@ -195,9 +195,6 @@ header {
          margin-left: 0;
       }
     }
-    @include media($tablet) {
-      display: none;
-    }
   }
 }
 
@@ -205,6 +202,7 @@ header {
   background: $sky-blue;
   position: relative;
   height: 175vw * (752/1440); // We can be a pixel off sometimes.
+  overflow: hidden;
   @include media($tablet) {
     height: 100vw * (752/1440); // We can be a pixel off sometimes.
   }
@@ -250,17 +248,16 @@ header {
 }
 
 .switcher {
-  width: 550px;
   margin: 0 auto;
   position: relative;
   .previous, .next {
     text-indent: -9999px;
     cursor: pointer;
     position: absolute;
-    top: 80px;
-    left: 0;
-    width: 60px;
-    height: 60px;
+    top: 50px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
     padding: 10px;
     border-radius: 100%;
     color: $white;
@@ -271,8 +268,18 @@ header {
   }
   .next {
     left: auto;
-    right: 0;
+    right: 5px;
     background-image: url(images/arrow-next.svg);
+  }
+  @include media(min-width 460px) {
+    .previous, .next {
+      width: 60px;
+      height: 60px;
+      top: 80px;
+    }
+  }
+  @include media(min-width 550px) {
+    width: 550px;
   }
 }
 
