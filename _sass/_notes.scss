@@ -63,19 +63,28 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 */
 
 .notesContainer {
-  z-index: 3;
-  width: 100%;
+  width: 50%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 25%;
   position: absolute;
+
+  @include media($tablet) {
+    width: 30%;
+    left: 35%;
+  }
 }
 
 .notesContainer > div 
 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 4vw;
+    height: 4vw;
+
+    @include media($tablet) {
+      width: 2.5vw;
+      height: 2.5vw;
+    }
     
     /* We use the following properties to apply the fade and drop animations to each leaf.
        Each of these properties takes two values. These values respectively match a setting

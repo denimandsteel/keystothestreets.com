@@ -376,12 +376,22 @@ header {
     background-image: url(images/pianos/canada-place.svg);
     &-piano {
       background-image: url(images/pianos/canada-place-piano.svg);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
     }
   }
   &.cambie-bridge {
     background-image: url(images/pianos/cambie-bridge.svg);
     &-piano {
       background-image: url(images/pianos/cambie-bridge-piano.svg);
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
     }
   }
 }
@@ -601,4 +611,5 @@ footer {
 }
 
 @import "_keys";
+@import "_notes";
 
