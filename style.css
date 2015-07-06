@@ -498,6 +498,9 @@ header {
 .about, .sponsors-wrap {
   background: #fff; }
 
+.about {
+  background: #fff url(images/notes-bg.svg); }
+
 .support {
   background: #28d2ff;
   color: #fff; }
