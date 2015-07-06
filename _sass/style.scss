@@ -194,6 +194,15 @@ header {
       &:first-of-type {
          margin-left: 0;
       }
+      @include media(min-width 500px) {
+        a {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+    p {
+      font-size: rem(20);
     }
   }
 }

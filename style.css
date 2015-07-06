@@ -186,6 +186,12 @@ header {
       display: inline-block; }
       .social.mobile-social ul li:first-of-type {
         margin-left: 0; }
+      @media screen and (min-width: 500px) {
+        .social.mobile-social ul li a {
+          width: 70px;
+          height: 70px; } }
+    .social.mobile-social p {
+      font-size: 1.25rem; }
 
 .pianos {
   background: #28d2ff;
