@@ -271,6 +271,13 @@ header {
     right: 5px;
     background-image: url(images/arrow-next.svg);
   }
+  @include media(min-width 330px) {
+    .previous, .next {
+      width: 40px;
+      height: 40px;
+      top: 60px;
+    }
+  }
   @include media(min-width 460px) {
     .previous, .next {
       width: 60px;

@@ -283,6 +283,11 @@ header {
     left: auto;
     right: 5px;
     background-image: url(images/arrow-next.svg); }
+  @media screen and (min-width: 330px) {
+    .switcher .previous, .switcher .next {
+      width: 40px;
+      height: 40px;
+      top: 60px; } }
   @media screen and (min-width: 460px) {
     .switcher .previous, .switcher .next {
       width: 60px;
