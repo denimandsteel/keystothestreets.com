@@ -131,4 +131,8 @@ $(function() {
     index += 1;
     $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
   });
+
+  $(".keyboard").click(function() {
+    $(".keys").toggleClass('show-hints');
+  });
 });

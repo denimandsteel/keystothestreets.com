@@ -681,6 +681,18 @@ footer {
       .keys .key .key-white:active:after, .keys .key .key-white.active:after {
         height: 6.25%;
         bottom: 4.16667%; }
+      .keys .key .key-white .letter {
+        color: black;
+        font-size: 2vw;
+        position: absolute;
+        bottom: 5.55556%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s;
+        opacity: 0; }
     .keys .key .key-black {
       height: 68.33333%;
       width: 46.66667%;
@@ -697,12 +709,67 @@ footer {
         content: " ";
         position: absolute;
         width: 100%;
-        height: 15px;
+        height: 10%;
         bottom: 0;
         background-color: #1A1818; }
+      .keys .key .key-black:before {
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: -webkit-linear-gradient(#323232, #494242);
+        opacity: 1; }
       .keys .key .key-black:active, .keys .key .key-black.active {
         background-color: #1A1818; }
         .keys .key .key-black:active:after, .keys .key .key-black.active:after {
           height: 10px; }
+        .keys .key .key-black:active:before, .keys .key .key-black.active:before {
+          opacity: 0; }
+      .keys .key .key-black .letter {
+        color: #F8F0E6;
+        font-size: 1.8vw;
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-transition: opacity .2s, bottom .3s;
+        transition: opacity .2s, bottom .3s;
+        opacity: 0; }
+  .keys .keyboard {
+    cursor: pointer;
+    background-image: url("images/keyboard.svg");
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    position: absolute;
+    right: 10px;
+    border: none;
+    bottom: -40px;
+    height: 40px;
+    width: 60px;
+    opacity: .6;
+    display: none; }
+    .keys .keyboard:focus {
+      outline: none; }
+    @media screen and (min-width: 768px) {
+      .keys .keyboard {
+        display: block; } }
+  .keys.show-hints .key .key-white .letter, .keys.show-hints .key .key-black .letter {
+    opacity: 1; }
+  .keys.show-hints .key .key-white:active .letter, .keys.show-hints .key .key-white.active .letter, .keys.show-hints .key .key-black:active .letter, .keys.show-hints .key .key-black.active .letter {
+    opacity: 0; }
+  .keys.show-hints .key .key-black:active .letter, .keys.show-hints .key .key-black.active .letter {
+    bottom: 6.66667%; }
+  .keys.show-hints .keyboard {
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
