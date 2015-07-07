@@ -892,6 +892,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   position: absolute;
   width: 4vw;
   height: 4vw;
+  bottom: 30vw;
   /* We use the following properties to apply the fade and drop animations to each leaf.
      Each of these properties takes two values. These values respectively match a setting
      for fade and drop.
@@ -914,7 +915,8 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   @media screen and (min-width: 768px) {
     .notesContainer > div {
       width: 2.5vw;
-      height: 2.5vw; } }
+      height: 2.5vw;
+      bottom: 15vw; } }
 
 /* This CSS rule is applied to all img elements directly inside div elements which are
    directly inside the leafContainer div. In other words, it matches the 'img' elements
@@ -982,14 +984,14 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     -webkit-transform: translate(0px, 0px); }
   /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
   100% {
-    -webkit-transform: translate(0px, -650px); } }
+    -webkit-transform: translate(0px, -100vw); } }
 @-moz-keyframes drop {
   /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
   0% {
     -moz-transform: translate(0px, 0px); }
   /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
   100% {
-    -moz-transform: translate(0px, -650px); } }
+    -moz-transform: translate(0px, -100vw); } }
 @keyframes drop {
   /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
   0% {
@@ -1000,11 +1002,41 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     transform: translate(0px, 0px); }
   /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
   100% {
-    -webkit-transform: translate(0px, -650px);
-    -moz-transform: translate(0px, -650px);
-    -ms-transform: translate(0px, -650px);
-    -o-transform: translate(0px, -650px);
-    transform: translate(0px, -650px); } }
+    -webkit-transform: translate(0px, -100vw);
+    -moz-transform: translate(0px, -100vw);
+    -ms-transform: translate(0px, -100vw);
+    -o-transform: translate(0px, -100vw);
+    transform: translate(0px, -100vw); } }
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -webkit-transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -webkit-transform: translate(0px, -50vw); } }
+  @-moz-keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -moz-transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -moz-transform: translate(0px, -50vw); } }
+  @keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      -moz-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
+      transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -webkit-transform: translate(0px, -50vw);
+      -moz-transform: translate(0px, -50vw);
+      -ms-transform: translate(0px, -50vw);
+      -o-transform: translate(0px, -50vw);
+      transform: translate(0px, -50vw); } } }
 /* Rotates a leaf from -50 to 50 degrees in 2D space */
 @-webkit-keyframes clockwiseSpin {
   /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */

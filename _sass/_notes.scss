@@ -83,9 +83,12 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   width: 4vw;
   height: 4vw;
 
+  bottom: 30vw;
+
   @include media($tablet) {
     width: 2.5vw;
     height: 2.5vw;
+    bottom: 15vw;
   }
   
   /* We use the following properties to apply the fade and drop animations to each leaf.
@@ -139,8 +142,19 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
     0%   { @include transform(translate(0px, 0px)) }
     /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
-    100% { @include transform(translate(0px, -650px)) }
+    100% { @include transform(translate(0px, -100vw)) }
 }
+
+@include media($tablet) {
+  @include keyframes(drop)
+  {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0%   { @include transform(translate(0px, 0px)) }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% { @include transform(translate(0px, -50vw)) }
+  }
+}
+
 
 /* Rotates a leaf from -50 to 50 degrees in 2D space */
 @include keyframes(clockwiseSpin)

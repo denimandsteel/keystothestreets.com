@@ -138,7 +138,6 @@ function createANote()
     /* Randomly choose a leaf image and assign it to the newly created element */
     image.src = 'images/notes/' + randomInteger(1, 4) + '.svg';
     
-    noteDiv.style.bottom = "100px";
     image.style.height = "100%";
     image.style.width = "100%";
 
