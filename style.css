@@ -35,7 +35,7 @@ h1 {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 68em) {
     .contain {
       padding: 0; } }
 
@@ -186,14 +186,18 @@ header {
       display: inline-block; }
       .social.mobile-social ul li:first-of-type {
         margin-left: 0; }
-    @media screen and (min-width: 768px) {
-      .social.mobile-social {
-        display: none; } }
+      @media screen and (min-width: 500px) {
+        .social.mobile-social ul li a {
+          width: 70px;
+          height: 70px; } }
+    .social.mobile-social p {
+      font-size: 1.25rem; }
 
 .pianos {
   background: #28d2ff;
   position: relative;
-  height: 91.38889vw; }
+  height: 91.38889vw;
+  overflow: hidden; }
   @media screen and (min-width: 768px) {
     .pianos {
       height: 52.22222vw; } }
@@ -264,17 +268,16 @@ header {
   /*z-index: 8;*/ }
 
 .switcher {
-  width: 550px;
   margin: 0 auto;
   position: relative; }
   .switcher .previous, .switcher .next {
     text-indent: -9999px;
     cursor: pointer;
     position: absolute;
-    top: 80px;
-    left: 0;
-    width: 60px;
-    height: 60px;
+    top: 50px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
     padding: 10px;
     border-radius: 100%;
     color: #fff;
@@ -284,8 +287,21 @@ header {
     background-size: contain; }
   .switcher .next {
     left: auto;
-    right: 0;
+    right: 5px;
     background-image: url(images/arrow-next.svg); }
+  @media screen and (min-width: 330px) {
+    .switcher .previous, .switcher .next {
+      width: 40px;
+      height: 40px;
+      top: 60px; } }
+  @media screen and (min-width: 460px) {
+    .switcher .previous, .switcher .next {
+      width: 60px;
+      height: 60px;
+      top: 80px; } }
+  @media screen and (min-width: 550px) {
+    .switcher {
+      width: 550px; } }
 
 .pianos .slide-wrap.slide-wrap-slowest > div {
   -webkit-transition-delay: 0.5s;
@@ -501,6 +517,9 @@ header {
 
 .about, .sponsors-wrap {
   background: #fff; }
+
+.about {
+  background: #fff url(images/notes-bg.svg); }
 
 .support {
   background: #28d2ff;
