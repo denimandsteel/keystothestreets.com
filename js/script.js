@@ -38,6 +38,7 @@ $(function() {
   // mouse clicks on keys
   $('.key-white, .key-black').mousedown(function() {
     key_sounds[$(this).attr('id')].play();
+    fireANote();
   });
 
   // keyboard playing
@@ -108,6 +109,7 @@ $(function() {
     if (note != "") {
       if (e.type == 'keydown') {
         key_sounds[note].play();
+        fireANote();
         $("#" + note).addClass('active');
       } else {
         $("#" + note).removeClass('active');

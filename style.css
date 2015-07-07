@@ -265,7 +265,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4; }
+  /*z-index: 8;*/ }
 
 .switcher {
   margin: 0 auto;
@@ -388,6 +388,13 @@ header {
     background-image: url(images/pianos/chinatown.svg); }
     .scene.chinatown-piano {
       background-image: url(images/pianos/chinatown-piano.svg); }
+  .scene.canada-place-piano, .scene.cambie-bridge-piano, .scene.strathcona-piano, .scene.chinatown-piano {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; }
 
 .tagline {
   display: none; }
@@ -659,11 +666,8 @@ footer {
   position: relative;
   background-color: white;
   -webkit-user-select: none;
-  /* Chrome all / Safari all */
   -moz-user-select: none;
-  /* Firefox all */
   -ms-user-select: none;
-  /* IE 10+ */
   user-select: none; }
   .keys .back-drop {
     z-index: 0;
@@ -688,16 +692,19 @@ footer {
         background-color: #F8F0E6;
         height: 85%;
         width: 100%;
-        -webkit-transition: all .2s;
-        transition: all .2s; }
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s; }
         .keys .key .key-white .top:after {
-          -webkit-transition: all .2s;
-          transition: all .2s;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          transition: all 0.2s;
           content: " ";
           height: 100%;
           width: 100%;
           position: absolute;
           background: -webkit-linear-gradient(#e4d2cd, #F8F0E6);
+          background: linear-gradient(#e4d2cd, #F8F0E6);
           opacity: 0; }
       .keys .key .key-white:after {
         content: " ";
@@ -710,8 +717,9 @@ footer {
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         bottom: 8.33333%;
-        -webkit-transition: all .2s;
-        transition: all .2s; }
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s; }
       .keys .key .key-white:active .top, .keys .key .key-white.active .top {
         height: 93.33333%;
         background-color: #e4d2cd; }
@@ -729,8 +737,9 @@ footer {
         right: 0;
         text-align: center;
         vertical-align: middle;
-        -webkit-transition: opacity .3s;
-        transition: opacity .3s;
+        -webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        transition: opacity 0.3s;
         opacity: 0; }
     .keys .key .key-black {
       height: 68.33333%;
@@ -740,11 +749,13 @@ footer {
       top: 0;
       z-index: 2;
       background-color: #323232;
-      -webkit-transition: all .3s;
-      transition: all .3s; }
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
       .keys .key .key-black:after {
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
         content: " ";
         position: absolute;
         width: 100%;
@@ -752,13 +763,15 @@ footer {
         bottom: 0;
         background-color: #1A1818; }
       .keys .key .key-black:before {
-        -webkit-transition: all .2s;
-        transition: all .2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
         content: " ";
         height: 100%;
         width: 100%;
         position: absolute;
         background: -webkit-linear-gradient(#323232, #494242);
+        background: linear-gradient(#323232, #494242);
         opacity: 1; }
       .keys .key .key-black:active, .keys .key .key-black.active {
         background-color: #1A1818; }
@@ -775,8 +788,9 @@ footer {
         right: 0;
         text-align: center;
         vertical-align: middle;
-        -webkit-transition: opacity .2s, bottom .3s;
-        transition: opacity .2s, bottom .3s;
+        -webkit-transition: opacity 0.2s, bottom 0.3s;
+        -moz-transition: opacity 0.2s, bottom 0.3s;
+        transition: opacity 0.2s, bottom 0.3s;
         opacity: 0; }
   .keys .keyboard {
     cursor: pointer;
@@ -787,8 +801,9 @@ footer {
     text-indent: -9999px;
     background-color: transparent;
     border-radius: 5px;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
     position: absolute;
     right: 10px;
     border: none;
@@ -810,5 +825,293 @@ footer {
     bottom: 6.66667%; }
   .keys.show-hints .keyboard {
     opacity: 1; }
+
+/*
+Important:
+
+This is sample code demonstrating API, technology or techniques in development.
+Although this sample code has been reviewed for technical accuracy, it is not 
+final. Apple is supplying this information to help you plan for the adoption of 
+the technologies and programming interfaces described herein. This information 
+is subject to change, and software implemented based on this sample code should 
+be tested with final operating system software and final documentation. Newer 
+versions of this sample code may be provided with future seeds of the API or 
+technology. For information about updates to this and other developer 
+documentation, view the New & Updated sidebars in subsequent documentation seeds.
+*/
+/*
+File: leaves.css
+Abstract: Defines CSS properties for the leaves sample.
+          Applies animations to the leaves. Defines the appearance, position, and dimensions of 
+          all div elements on the "Falling Leaves -- Using CSS Animations and Transforms" page.
+          
+Version: 1.0
+
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by
+Apple Inc. ("Apple") in consideration of your agreement to the
+following terms, and your use, installation, modification or
+redistribution of this Apple software constitutes acceptance of these
+terms.  If you do not agree with these terms, please do not use,
+install, modify or redistribute this Apple software.
+
+In consideration of your agreement to abide by the following terms, and
+subject to these terms, Apple grants you a personal, non-exclusive
+license, under Apple's copyrights in this original Apple software (the
+"Apple Software"), to use, reproduce, modify and redistribute the Apple
+Software, with or without modifications, in source and/or binary forms;
+provided that if you redistribute the Apple Software in its entirety and
+without modifications, you must retain this notice and the following
+text and disclaimers in all such redistributions of the Apple Software.
+Neither the name, trademarks, service marks or logos of Apple Inc.
+may be used to endorse or promote products derived from the Apple
+Software without specific prior written permission from Apple.  Except
+as expressly stated in this notice, no other rights or licenses, express
+or implied, are granted by Apple herein, including but not limited to
+any patent rights that may be infringed by your derivative works or by
+other works in which the Apple Software may be incorporated.
+
+The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+
+IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+Copyright (C) 2008 Apple Inc. All Rights Reserved.
+
+*/
+.notesContainer {
+  pointer-events: none;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 25%;
+  position: absolute;
+  /*z-index: 7;*/ }
+  @media screen and (min-width: 768px) {
+    .notesContainer {
+      width: 30%;
+      left: 35%; } }
+
+.notesContainer > div {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  bottom: 30vw;
+  /* We use the following properties to apply the fade and drop animations to each leaf.
+     Each of these properties takes two values. These values respectively match a setting
+     for fade and drop.
+  */
+  -webkit-animation-name: fade, drop;
+  -moz-animation-name: fade, drop;
+  animation-name: fade, drop;
+  -webkit-animation-timing-function: linear, linear;
+  -moz-animation-timing-function: linear, linear;
+  animation-timing-function: linear, linear;
+  -webkit-animation-iteration-count: 1, 1;
+  -moz-animation-iteration-count: 1, 1;
+  animation-iteration-count: 1, 1;
+  -webkit-animation-duration: normal, normal;
+  -moz-animation-duration: normal, normal;
+  animation-duration: normal, normal;
+  -webkit-animation-duration: 6s, 6s;
+  -moz-animation-duration: 6s, 6s;
+  animation-duration: 6s, 6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  @media screen and (min-width: 768px) {
+    .notesContainer > div {
+      width: 2.5vw;
+      height: 2.5vw;
+      bottom: 15vw; } }
+
+/* This CSS rule is applied to all img elements directly inside div elements which are
+   directly inside the leafContainer div. In other words, it matches the 'img' elements
+   inside the leafDivs which are created in the createALeaf() function.
+*/
+.notesContainer > div > img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpinAndFlip
+     animations on each leaf.
+     The createALeaf function in the Leaves.js file determines whether a leaf has the 
+     clockwiseSpin or counterclockwiseSpinAndFlip animation.
+  */
+  -webkit-animation-name: clockwiseSpin;
+  -moz-animation-name: clockwiseSpin;
+  animation-name: clockwiseSpin;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: 50% -100%;
+  -moz-transform-origin: 50% -100%;
+  -ms-transform-origin: 50% -100%;
+  -o-transform-origin: 50% -100%;
+  transform-origin: 50% -100%; }
+
+/* Hides a leaf towards the very end of the animation */
+@-webkit-keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/* Makes a leaf fall from -300 to 600 pixels in the y-axis */
+@-webkit-keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -webkit-transform: translate(0px, 0px); }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -webkit-transform: translate(0px, -100vw); } }
+@-moz-keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -moz-transform: translate(0px, 0px); }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -moz-transform: translate(0px, -100vw); } }
+@keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -webkit-transform: translate(0px, -100vw);
+    -moz-transform: translate(0px, -100vw);
+    -ms-transform: translate(0px, -100vw);
+    -o-transform: translate(0px, -100vw);
+    transform: translate(0px, -100vw); } }
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -webkit-transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -webkit-transform: translate(0px, -50vw); } }
+  @-moz-keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -moz-transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -moz-transform: translate(0px, -50vw); } }
+  @keyframes drop {
+    /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      -moz-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
+      transform: translate(0px, 0px); }
+    /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+    100% {
+      -webkit-transform: translate(0px, -50vw);
+      -moz-transform: translate(0px, -50vw);
+      -ms-transform: translate(0px, -50vw);
+      -o-transform: translate(0px, -50vw);
+      transform: translate(0px, -50vw); } } }
+/* Rotates a leaf from -50 to 50 degrees in 2D space */
+@-webkit-keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: rotate(-50deg); }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: rotate(50deg); } }
+@-moz-keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -moz-transform: rotate(-50deg); }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -moz-transform: rotate(50deg); } }
+@keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg); }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg); } }
+/* Flips a leaf and rotates it from 50 to -50 degrees in 2D space */
+@-webkit-keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: scale(-1, 1) rotate(50deg); }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: scale(-1, 1) rotate(-50deg); } }
+@-moz-keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -moz-transform: scale(-1, 1) rotate(50deg); }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -moz-transform: scale(-1, 1) rotate(-50deg); } }
+@keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: scale(-1, 1) rotate(50deg);
+    -moz-transform: scale(-1, 1) rotate(50deg);
+    -ms-transform: scale(-1, 1) rotate(50deg);
+    -o-transform: scale(-1, 1) rotate(50deg);
+    transform: scale(-1, 1) rotate(50deg); }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: scale(-1, 1) rotate(-50deg);
+    -moz-transform: scale(-1, 1) rotate(-50deg);
+    -ms-transform: scale(-1, 1) rotate(-50deg);
+    -o-transform: scale(-1, 1) rotate(-50deg);
+    transform: scale(-1, 1) rotate(-50deg); } }
 
 /*# sourceMappingURL=style.css.map */
