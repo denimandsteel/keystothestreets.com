@@ -911,7 +911,10 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   animation-duration: normal, normal;
   -webkit-animation-duration: 6s, 6s;
   -moz-animation-duration: 6s, 6s;
-  animation-duration: 6s, 6s; }
+  animation-duration: 6s, 6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
   @media screen and (min-width: 768px) {
     .notesContainer > div {
       width: 2.5vw;

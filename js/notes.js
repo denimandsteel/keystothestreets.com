@@ -142,7 +142,7 @@ function createANote()
     image.style.width = "100%";
 
     /* Position the leaf at a random location along the screen */
-    noteDiv.style.left = randomInteger(10, 90) + '%';
+    noteDiv.style.left = randomInteger(0, 80) + '%';
     
     /* Randomly choose a spin animation */
     var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip';

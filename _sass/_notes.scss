@@ -101,6 +101,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   @include animation-iteration-count(1, 1);
   @include animation-duration(normal, normal);
   @include animation-duration(6s, 6s);
+  @include animation-fill-mode(forwards);
 }
 
 /* This CSS rule is applied to all img elements directly inside div elements which are
