@@ -119,7 +119,9 @@ $(function() {
 
   var pianos = [
     'canada-place',
-    'cambie-bridge',
+    // 'cambie-bridge',
+    'strathcona',
+    'chinatown',
   ];
   var index = 0;
 

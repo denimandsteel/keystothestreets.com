@@ -312,9 +312,25 @@ header {
     // @include transition-delay(0.75s);
     @include transition(transform 0.75s ease-in-out);
   }
-  &.cambie-bridge {
+  $num: 3;
+  &.canada-place {
     .slide-wrap > div {
-      @include transform(translateX(-50%));
+      @include transform(translateX(0%));
+    }
+  }
+  // &.cambie-bridge {
+  //   .slide-wrap > div {
+  //     @include transform(translateX(-25%));
+  //   }
+  // }
+  &.strathcona {
+    .slide-wrap > div {
+      @include transform(translateX((-100%/$num)*1));
+    }
+  }
+  &.chinatown {
+    .slide-wrap > div {
+      @include transform(translateX((-100%/$num)*2));
     }
   }
 }
@@ -404,7 +420,19 @@ header {
   &.cambie-bridge {
     background-image: url(images/pianos/cambie-bridge.svg);
     &-piano {
-      background-image: url(images/pianos/cambie-bridge-piano.svg);
+      background-image: url(images/pianos/generic-piano.svg);
+    }
+  }
+  &.strathcona {
+    background-image: url(images/pianos/strathcona.svg);
+    &-piano {
+      background-image: url(images/pianos/strathcona-piano.svg);
+    }
+  }
+  &.chinatown {
+    background-image: url(images/pianos/chinatown.svg);
+    &-piano {
+      background-image: url(images/pianos/chinatown-piano.svg);
     }
   }
 }

@@ -318,12 +318,24 @@ header {
   -webkit-transition: -webkit-transform 0.75s ease-in-out;
   -moz-transition: -moz-transform 0.75s ease-in-out;
   transition: transform 0.75s ease-in-out; }
-.pianos.cambie-bridge .slide-wrap > div {
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+.pianos.canada-place .slide-wrap > div {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%); }
+.pianos.strathcona .slide-wrap > div {
+  -webkit-transform: translateX(-33.33333%);
+  -moz-transform: translateX(-33.33333%);
+  -ms-transform: translateX(-33.33333%);
+  -o-transform: translateX(-33.33333%);
+  transform: translateX(-33.33333%); }
+.pianos.chinatown .slide-wrap > div {
+  -webkit-transform: translateX(-66.66667%);
+  -moz-transform: translateX(-66.66667%);
+  -ms-transform: translateX(-66.66667%);
+  -o-transform: translateX(-66.66667%);
+  transform: translateX(-66.66667%); }
 
 .scroll {
   background: url(images/scroll.svg) top left;
@@ -367,7 +379,15 @@ header {
   .scene.cambie-bridge {
     background-image: url(images/pianos/cambie-bridge.svg); }
     .scene.cambie-bridge-piano {
-      background-image: url(images/pianos/cambie-bridge-piano.svg); }
+      background-image: url(images/pianos/generic-piano.svg); }
+  .scene.strathcona {
+    background-image: url(images/pianos/strathcona.svg); }
+    .scene.strathcona-piano {
+      background-image: url(images/pianos/strathcona-piano.svg); }
+  .scene.chinatown {
+    background-image: url(images/pianos/chinatown.svg); }
+    .scene.chinatown-piano {
+      background-image: url(images/pianos/chinatown-piano.svg); }
 
 .tagline {
   display: none; }
