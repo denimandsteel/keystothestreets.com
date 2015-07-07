@@ -303,6 +303,8 @@ header {
     .switcher {
       width: 550px; } }
 
+.pianos .slide-wrap-slowest {
+  pointer-events: none; }
 .pianos .slide-wrap.slide-wrap-slowest > div {
   -webkit-transition-delay: 0.5s;
   -moz-transition-delay: 0.5s;
@@ -393,8 +395,7 @@ header {
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    pointer-events: none; }
+    width: 100%; }
 
 .tagline {
   display: none; }
@@ -830,21 +831,21 @@ footer {
 Important:
 
 This is sample code demonstrating API, technology or techniques in development.
-Although this sample code has been reviewed for technical accuracy, it is not 
-final. Apple is supplying this information to help you plan for the adoption of 
-the technologies and programming interfaces described herein. This information 
-is subject to change, and software implemented based on this sample code should 
-be tested with final operating system software and final documentation. Newer 
-versions of this sample code may be provided with future seeds of the API or 
-technology. For information about updates to this and other developer 
+Although this sample code has been reviewed for technical accuracy, it is not
+final. Apple is supplying this information to help you plan for the adoption of
+the technologies and programming interfaces described herein. This information
+is subject to change, and software implemented based on this sample code should
+be tested with final operating system software and final documentation. Newer
+versions of this sample code may be provided with future seeds of the API or
+technology. For information about updates to this and other developer
 documentation, view the New & Updated sidebars in subsequent documentation seeds.
 */
 /*
 File: leaves.css
 Abstract: Defines CSS properties for the leaves sample.
-          Applies animations to the leaves. Defines the appearance, position, and dimensions of 
+          Applies animations to the leaves. Defines the appearance, position, and dimensions of
           all div elements on the "Falling Leaves -- Using CSS Animations and Transforms" page.
-          
+
 Version: 1.0
 
 Disclaimer: IMPORTANT:  This Apple software is supplied to you by
@@ -889,7 +890,6 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 
 */
 .notesContainer {
-  pointer-events: none;
   width: 50%;
   height: 100%;
   top: 0;
@@ -944,7 +944,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   height: 100px;
   /* We use the following properties to adjust the clockwiseSpin or counterclockwiseSpinAndFlip
      animations on each leaf.
-     The createALeaf function in the Leaves.js file determines whether a leaf has the 
+     The createALeaf function in the Leaves.js file determines whether a leaf has the
      clockwiseSpin or counterclockwiseSpinAndFlip animation.
   */
   -webkit-animation-name: clockwiseSpin;

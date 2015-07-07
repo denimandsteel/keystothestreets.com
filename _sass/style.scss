@@ -300,6 +300,9 @@ header {
 }
 
 .pianos {
+  .slide-wrap-slowest {
+    pointer-events: none;
+  }
   .slide-wrap.slide-wrap-slowest > div {
     @include transition-delay(0.5s);
     @include transition(transform 1.25s ease-in-out);
@@ -441,7 +444,7 @@ header {
     top: 0;
     height: 100%;
     width: 100%;
-    pointer-events: none;
+    // pointer-events: none;
   }
 }
 
