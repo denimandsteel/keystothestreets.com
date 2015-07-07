@@ -79,7 +79,7 @@ function fireANote()
         container.append(note);
         setTimeout(function() {
             container.find('div:first').remove();
-        }, 6000);
+        }, 8000);
     }
 }
 
@@ -150,17 +150,25 @@ function createANote()
     
     /* Set the -webkit-animation-name property with these values */
     noteDiv.style.webkitAnimationName = 'fade, drop';
+
     image.style.webkitAnimationName = spinAnimationName;
+    image.style.animationName = spinAnimationName;
+    image.style.mozAnimationName = spinAnimationName;
     
     /* Figure out a random duration for the fade and drop animations */
-    var fadeAndDropDuration = "6s";
+    var fadeAndDropDuration = durationValue(randomFloat(6, 8));
     
     /* Figure out another random duration for the spin animation */
     var spinDuration = durationValue(randomFloat(4, 8));
     /* Set the -webkit-animation-duration property with these values */
     noteDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    noteDiv.style.mozAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+    noteDiv.style.animationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
 
     image.style.webkitAnimationDuration = spinDuration;
+    image.style.mozAnimationDuration = spinDuration;
+    image.style.animationDuration = spinDuration;
+
 
     // add the <img> to the <div>
     noteDiv.appendChild(image);

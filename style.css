@@ -896,9 +896,21 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
      Each of these properties takes two values. These values respectively match a setting
      for fade and drop.
   */
-  -webkit-animation-iteration-count: infinite, infinite;
-  -webkit-animation-direction: normal, normal;
-  -webkit-animation-timing-function: linear, linear; }
+  -webkit-animation-name: fade, drop;
+  -moz-animation-name: fade, drop;
+  animation-name: fade, drop;
+  -webkit-animation-timing-function: linear, linear;
+  -moz-animation-timing-function: linear, linear;
+  animation-timing-function: linear, linear;
+  -webkit-animation-iteration-count: 1, 1;
+  -moz-animation-iteration-count: 1, 1;
+  animation-iteration-count: 1, 1;
+  -webkit-animation-duration: normal, normal;
+  -moz-animation-duration: normal, normal;
+  animation-duration: normal, normal;
+  -webkit-animation-duration: 6s, 6s;
+  -moz-animation-duration: 6s, 6s;
+  animation-duration: 6s, 6s; }
   @media screen and (min-width: 768px) {
     .notesContainer > div {
       width: 2.5vw;
@@ -917,13 +929,45 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
      The createALeaf function in the Leaves.js file determines whether a leaf has the 
      clockwiseSpin or counterclockwiseSpinAndFlip animation.
   */
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
+  -webkit-animation-name: clockwiseSpin;
+  -moz-animation-name: clockwiseSpin;
+  animation-name: clockwiseSpin;
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-transform-origin: 50% -100%; }
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transform-origin: 50% -100%;
+  -moz-transform-origin: 50% -100%;
+  -ms-transform-origin: 50% -100%;
+  -o-transform-origin: 50% -100%;
+  transform-origin: 50% -100%; }
 
 /* Hides a leaf towards the very end of the animation */
 @-webkit-keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes fade {
+  /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fade {
   /* Show a leaf while into or below 95 percent of the animation and hide it, otherwise */
   0% {
     opacity: 1; }
@@ -939,6 +983,28 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
   100% {
     -webkit-transform: translate(0px, -650px); } }
+@-moz-keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -moz-transform: translate(0px, 0px); }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -moz-transform: translate(0px, -650px); } }
+@keyframes drop {
+  /* Move a leaf to -300 pixels in the y-axis at the start of the animation */
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); }
+  /* Move a leaf to 600 pixels in the y-axis at the end of the animation */
+  100% {
+    -webkit-transform: translate(0px, -650px);
+    -moz-transform: translate(0px, -650px);
+    -ms-transform: translate(0px, -650px);
+    -o-transform: translate(0px, -650px);
+    transform: translate(0px, -650px); } }
 /* Rotates a leaf from -50 to 50 degrees in 2D space */
 @-webkit-keyframes clockwiseSpin {
   /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
@@ -947,6 +1013,28 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
   100% {
     -webkit-transform: rotate(50deg); } }
+@-moz-keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -moz-transform: rotate(-50deg); }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -moz-transform: rotate(50deg); } }
+@keyframes clockwiseSpin {
+  /* Rotate a leaf by -50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg); }
+  /*  Rotate a leaf by 50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg); } }
 /* Flips a leaf and rotates it from 50 to -50 degrees in 2D space */
 @-webkit-keyframes counterclockwiseSpinAndFlip {
   /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
@@ -955,5 +1043,27 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
   /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
   100% {
     -webkit-transform: scale(-1, 1) rotate(-50deg); } }
+@-moz-keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -moz-transform: scale(-1, 1) rotate(50deg); }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -moz-transform: scale(-1, 1) rotate(-50deg); } }
+@keyframes counterclockwiseSpinAndFlip {
+  /* Flip a leaf and rotate it by 50 degrees in 2D space at the start of the animation */
+  0% {
+    -webkit-transform: scale(-1, 1) rotate(50deg);
+    -moz-transform: scale(-1, 1) rotate(50deg);
+    -ms-transform: scale(-1, 1) rotate(50deg);
+    -o-transform: scale(-1, 1) rotate(50deg);
+    transform: scale(-1, 1) rotate(50deg); }
+  /* Flip a leaf and rotate it by -50 degrees in 2D space at the end of the animation */
+  100% {
+    -webkit-transform: scale(-1, 1) rotate(-50deg);
+    -moz-transform: scale(-1, 1) rotate(-50deg);
+    -ms-transform: scale(-1, 1) rotate(-50deg);
+    -o-transform: scale(-1, 1) rotate(-50deg);
+    transform: scale(-1, 1) rotate(-50deg); } }
 
 /*# sourceMappingURL=style.css.map */
