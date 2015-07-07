@@ -128,11 +128,11 @@ $(function() {
   var index = 0;
 
   $('.previous').click(function() {
-    index -= 1;
+    index = ( index + pianos.length - 1 ) % pianos.length;
     $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
   });
   $('.next').click(function() {
-    index += 1;
+    index = ( index + 1 ) % pianos.length;
     $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
   });
 
