@@ -25,10 +25,7 @@ $color-key-black-pressed: #1A1818;
 .keys {
   position: relative;
   background-color: white;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;
+  @include user-select(none);
   .back-drop {
     z-index: 0;
     width: 100%;
@@ -53,16 +50,14 @@ $color-key-black-pressed: #1A1818;
         background-color: $color-key-white;
         height: $height-key-white-top;
         width: 100%;
-        -webkit-transition: all .2s;
-        transition: all .2s;
+        @include transition(all .2s);
         &:after {
-          -webkit-transition: all .2s;
-          transition: all .2s;
+          @include transition(all .2s);
           content: " ";
           height: 100%;
           width: 100%;
           position: absolute;
-          background: -webkit-linear-gradient($color-key-white-pressed, $color-key-white);
+          @include background(linear-gradient($color-key-white-pressed, $color-key-white));
           opacity: 0;
         }
       }
@@ -77,8 +72,7 @@ $color-key-black-pressed: #1A1818;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         bottom: $height-key-white-bottom;
-        -webkit-transition: all .2s;
-        transition: all .2s;
+        @include transition(all .2s);
       }
 
       // gradient hack
@@ -106,8 +100,7 @@ $color-key-black-pressed: #1A1818;
         right: 0;
         text-align: center;
         vertical-align: middle;
-        -webkit-transition: opacity .3s;
-        transition: opacity .3s;
+        @include transition(opacity .3s);
         opacity: 0;
       }
     }
@@ -120,8 +113,7 @@ $color-key-black-pressed: #1A1818;
       z-index: 2;
       background-color: $color-key-black;
       &:after {
-        -webkit-transition: all .3s;
-        transition: all .3s;
+        @include transition(all .3s);
         content: " ";
         position: absolute;
         width:100%;
@@ -130,17 +122,15 @@ $color-key-black-pressed: #1A1818;
         background-color: $color-key-black-pressed;
       }
       &:before {
-        -webkit-transition: all .2s;
-        transition: all .2s;
+        @include transition(all .2s);
         content: " ";
         height: 100%;
         width: 100%;
         position: absolute;
-        background: -webkit-linear-gradient($color-key-black, #494242);
+        @include background(linear-gradient($color-key-black, #494242));
         opacity: 1;
       }
-      -webkit-transition: all .3s;
-      transition: all .3s;
+      @include transition(all .3s);
       &:active, &.active {
         background-color: $color-key-black-pressed;
         &:after {
@@ -160,8 +150,7 @@ $color-key-black-pressed: #1A1818;
         right: 0;
         text-align: center;
         vertical-align: middle;
-        -webkit-transition: opacity .2s, bottom .3s;
-        transition: opacity .2s, bottom .3s;
+        @include transition(opacity .2s, bottom .3s);
         opacity: 0;
       }
     }
@@ -175,8 +164,7 @@ $color-key-black-pressed: #1A1818;
     text-indent: -9999px;
     background-color: rgba(0,0,0,0);
     border-radius: 5px;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
+    @include transition(opacity .3s);
     position: absolute;
     right: 10px;
     border: none;

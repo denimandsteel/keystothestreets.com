@@ -63,19 +63,23 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 
 
 /* Define the number of leaves to be used in the animation */
-const NUMBER_OF_NOTES = 5;
+const NUMBER_OF_NOTES = 1;
 
 /* 
     Called when the "Falling Leaves" page is completely loaded.
 */
-function init()
+function fireANote()
 {
     /* Get a reference to the element that will contain the leaves */
     var container = $('.notesContainer');
     /* Fill the empty container with new leaves */
     for (var i = 0; i < NUMBER_OF_NOTES; i++) 
     {
-        container.append(createANote());
+        var note = $(createANote());
+        container.append(note);
+        setTimeout(function() {
+            container.find('div:first').remove();
+        }, 6000);
     }
 }
 
@@ -149,7 +153,7 @@ function createANote()
     image.style.webkitAnimationName = spinAnimationName;
     
     /* Figure out a random duration for the fade and drop animations */
-    var fadeAndDropDuration = durationValue(randomFloat(4, 8));
+    var fadeAndDropDuration = "6s";
     
     /* Figure out another random duration for the spin animation */
     var spinDuration = durationValue(randomFloat(4, 8));
@@ -165,6 +169,3 @@ function createANote()
     return noteDiv;
 }
 
-
-/* Calls the init function when the "Falling Leaves" page is full loaded */
-window.addEventListener('load', init, false);
