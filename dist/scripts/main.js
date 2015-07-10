@@ -300,7 +300,7 @@ $(function() {
         note = "g2";
         break;
     }
-    if (note != "") {
+    if (note != "" && $(e.target).attr('type') !== 'email') {
       if (e.type == 'keydown') {
         key_sounds[note].play();
         fireANote();
@@ -312,6 +312,22 @@ $(function() {
     };
 
   });
+
+  $('.button').click(function() {
+    key_sounds['c2'].play();
+  });
+
+  if (location.hash !== '') {
+    setTimeout(function() {
+      location.hash.replace('#', '').split(',').forEach(function(step, i) {
+        setTimeout(function() {
+          step.split('-').forEach(function(note) {
+            key_sounds[note].play();
+          });
+        }, i * 500);
+      });
+    }, 2000);
+  }
 
   var pianos = [
     'canada-place',
