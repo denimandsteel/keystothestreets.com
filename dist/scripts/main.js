@@ -323,6 +323,11 @@ $(function() {
         setTimeout(function() {
           step.split('-').forEach(function(note) {
             key_sounds[note].play();
+            fireANote();
+            $("#" + note).addClass('active');
+            setTimeout(function() {
+              $("#" + note).removeClass('active');
+            }, 250);
           });
         }, i * 500);
       });
