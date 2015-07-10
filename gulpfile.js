@@ -70,9 +70,9 @@ gulp.task('watch', function() {
   // gulp.watch('src/images/**/*', ['images']);
 
   // Create LiveReload server
-  // livereload.listen();
+  livereload.listen();
 
   // Watch any files in dist/, reload on change
-  // gulp.watch(['dist/**']).on('change', livereload.changed);
+  gulp.watch(['dist/**', 'index.html']).on('change', livereload.changed);
 
 });
