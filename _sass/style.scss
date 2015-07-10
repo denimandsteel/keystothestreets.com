@@ -42,7 +42,7 @@ h1 {
   height: 18px;
   position: relative;
   top: 4px;
-  background: url(images/pin.svg) left bottom;
+  background: url(../../images/pin.svg) left bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -97,7 +97,7 @@ header {
 
 .logo {
   display: block;
-  background: url(images/logo.png) no-repeat;
+  background: url(../../images/logo.png) no-repeat;
   background-size: contain;
   width: 80px;
   height: 65px;
@@ -171,10 +171,10 @@ header {
         width: 50px;
         height: 50px;
         border-radius: 100%;
-        &.facebook { background-image: url(images/social/facebook.svg); }
-        &.twitter { background-image: url(images/social/twitter.svg); }
-        &.youtube { background-image: url(images/social/youtube.svg); }
-        &.instagram { background-image: url(images/social/instagram.svg); }
+        &.facebook { background-image: url(../../images/social/facebook.svg); }
+        &.twitter { background-image: url(../../images/social/twitter.svg); }
+        &.youtube { background-image: url(../../images/social/youtube.svg); }
+        &.instagram { background-image: url(../../images/social/instagram.svg); }
         &:hover {
           background-color: $yellow;
         }
@@ -272,13 +272,13 @@ header {
     color: $white;
     text-shadow: 0px 1px 3px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
-    background: $yellow url(images/arrow-previous.svg) center center no-repeat;
+    background: $yellow url(../../images/arrow-previous.svg) center center no-repeat;
     background-size: contain;
   }
   .next {
     left: auto;
     right: 5px;
-    background-image: url(images/arrow-next.svg);
+    background-image: url(../../images/arrow-next.svg);
   }
   @include media(min-width 330px) {
     .previous, .next {
@@ -364,7 +364,7 @@ header {
 }
 
 .scroll {
-  background: url(images/scroll.svg) top left;
+  background: url(../../images/scroll.svg) top left;
   background-size: contain;
   width: 391px;
   padding: 20px 30px;
@@ -415,27 +415,27 @@ header {
   background-position: center bottom;
   background-size: cover;
   &.canada-place {
-    background-image: url(images/pianos/canada-place.svg);
+    background-image: url(../../images/pianos/canada-place.svg);
     &-piano {
-      background-image: url(images/pianos/canada-place-piano.svg);
+      background-image: url(../../images/pianos/canada-place-piano.svg);
     }
   }
   &.cambie-bridge {
-    background-image: url(images/pianos/cambie-bridge.svg);
+    background-image: url(../../images/pianos/cambie-bridge.svg);
     &-piano {
-      background-image: url(images/pianos/generic-piano.svg);
+      background-image: url(../../images/pianos/generic-piano.svg);
     }
   }
   &.strathcona {
-    background-image: url(images/pianos/strathcona.svg);
+    background-image: url(../../images/pianos/strathcona.svg);
     &-piano {
-      background-image: url(images/pianos/strathcona-piano.svg);
+      background-image: url(../../images/pianos/strathcona-piano.svg);
     }
   }
   &.chinatown {
-    background-image: url(images/pianos/chinatown.svg);
+    background-image: url(../../images/pianos/chinatown.svg);
     &-piano {
-      background-image: url(images/pianos/chinatown-piano.svg);
+      background-image: url(../../images/pianos/chinatown-piano.svg);
     }
   }
   &.canada-place-piano, &.cambie-bridge-piano, &.strathcona-piano, &.chinatown-piano {
@@ -542,7 +542,7 @@ header {
 }
 
 .about {
-  background: $white url(images/notes-bg.svg);
+  background: $white url(../../images/notes-bg.svg);
 }
 
 .support {
