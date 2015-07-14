@@ -142,9 +142,12 @@ $(function() {
 
   var pianos = [
     'canada-place',
-    // 'cambie-bridge',
+    'spyglass',
     'strathcona',
     'chinatown',
+    'robson-park',
+    'library',
+    'olympic-village',
   ];
   var index = 0;
 

@@ -257,24 +257,24 @@ header {
   height: 100%;
 }
 
-%slide-num {
-  position: absolute;
-  top: 0; left: 0;
-  height: 100%;
-}
+// %slide-num {
+//   position: absolute;
+//   top: 0; left: 0;
+//   height: 100%;
+// }
 
-@for $num from 1 through 5 {
-  .slide-#{$num} {
-    @extend %slide-num;
-    width: 100% * $num;
-    & .slide {
-      width: 100% / $num;
-    }
-  }
-  .index-#{$num} {
-    z-index: $num;
-  }
-}
+// @for $num from 1 through 5 {
+//   .slide-#{$num} {
+//     @extend %slide-num;
+//     width: 100% * $num;
+//     & .slide {
+//       width: 100% / $num;
+//     }
+//   }
+//   .index-#{$num} {
+//     z-index: $num;
+//   }
+// }
 
 .switcher-center {
   position: absolute;
@@ -326,6 +326,27 @@ header {
   }
 }
 
+$pianos: (
+  canada-place,
+  spyglass,
+  strathcona,
+  chinatown,
+  robson-park,
+  library,
+  olympic-village,
+);
+$num: length($pianos);
+
+.slide-width {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100% * $num;
+  & .slide {
+    width: 100% / $num;
+  }
+}
+
 .pianos {
   .slide-wrap-slowest {
     pointer-events: none;
@@ -342,27 +363,16 @@ header {
     // @include transition-delay(0.75s);
     @include transition(transform 0.75s ease-in-out);
   }
-  $num: 3;
-  &.canada-place {
-    .slide-wrap > div {
-      @include transform(translateX(0%));
+
+  @each $piano in $pianos {
+    $index: index($pianos, $piano) - 1;
+    &.#{$piano} {
+      .slide-wrap > div {
+        @include transform(translateX((-100%/$num)*$index));
+      }
     }
   }
-  // &.cambie-bridge {
-  //   .slide-wrap > div {
-  //     @include transform(translateX(-25%));
-  //   }
-  // }
-  &.strathcona {
-    .slide-wrap > div {
-      @include transform(translateX((-100%/$num)*1));
-    }
-  }
-  &.chinatown {
-    .slide-wrap > div {
-      @include transform(translateX((-100%/$num)*2));
-    }
-  }
+
 }
 
 // .pianos-wrapper {
@@ -436,43 +446,30 @@ header {
   }
 }
 
+%piano-defaults {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  // pointer-events: none;
+}
 
 .scene {
   height: 100%;
   background-position: center bottom;
   background-size: cover;
-  &.canada-place {
-    background-image: url(../../images/pianos/canada-place.svg);
-    &-piano {
-      background-image: url(../../images/pianos/canada-place-piano.svg);
+
+  @each $piano in $pianos {
+    &.#{$piano} {
+      background-image: url(../../images/pianos/#{$piano}.svg);
+      &-piano {
+        @extend %piano-defaults;
+        background-image: url(../../images/pianos/#{$piano}-piano.svg);
+      }
     }
   }
-  &.cambie-bridge {
-    background-image: url(../../images/pianos/cambie-bridge.svg);
-    &-piano {
-      background-image: url(../../images/pianos/generic-piano.svg);
-    }
-  }
-  &.strathcona {
-    background-image: url(../../images/pianos/strathcona.svg);
-    &-piano {
-      background-image: url(../../images/pianos/strathcona-piano.svg);
-    }
-  }
-  &.chinatown {
-    background-image: url(../../images/pianos/chinatown.svg);
-    &-piano {
-      background-image: url(../../images/pianos/chinatown-piano.svg);
-    }
-  }
-  &.canada-place-piano, &.cambie-bridge-piano, &.strathcona-piano, &.chinatown-piano {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    // pointer-events: none;
-  }
+
 }
 
 .tagline {

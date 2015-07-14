@@ -311,68 +311,6 @@ header {
   height: 100%;
 }
 
-.slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.slide-1 {
-  width: 100%;
-}
-.slide-1 .slide {
-  width: 100%;
-}
-
-.index-1 {
-  z-index: 1;
-}
-
-.slide-2 {
-  width: 200%;
-}
-.slide-2 .slide {
-  width: 50%;
-}
-
-.index-2 {
-  z-index: 2;
-}
-
-.slide-3 {
-  width: 300%;
-}
-.slide-3 .slide {
-  width: 33.33333%;
-}
-
-.index-3 {
-  z-index: 3;
-}
-
-.slide-4 {
-  width: 400%;
-}
-.slide-4 .slide {
-  width: 25%;
-}
-
-.index-4 {
-  z-index: 4;
-}
-
-.slide-5 {
-  width: 500%;
-}
-.slide-5 .slide {
-  width: 20%;
-}
-
-.index-5 {
-  z-index: 5;
-}
-
 .switcher-center {
   position: absolute;
   top: 0;
@@ -426,6 +364,17 @@ header {
   }
 }
 
+.slide-width {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 700%;
+}
+.slide-width .slide {
+  width: 14.28571%;
+}
+
 .pianos .slide-wrap-slowest {
   pointer-events: none;
 }
@@ -454,19 +403,47 @@ header {
   -o-transform: translateX(0%);
   transform: translateX(0%);
 }
+.pianos.spyglass .slide-wrap > div {
+  -webkit-transform: translateX(-14.28571%);
+  -moz-transform: translateX(-14.28571%);
+  -ms-transform: translateX(-14.28571%);
+  -o-transform: translateX(-14.28571%);
+  transform: translateX(-14.28571%);
+}
 .pianos.strathcona .slide-wrap > div {
-  -webkit-transform: translateX(-33.33333%);
-  -moz-transform: translateX(-33.33333%);
-  -ms-transform: translateX(-33.33333%);
-  -o-transform: translateX(-33.33333%);
-  transform: translateX(-33.33333%);
+  -webkit-transform: translateX(-28.57143%);
+  -moz-transform: translateX(-28.57143%);
+  -ms-transform: translateX(-28.57143%);
+  -o-transform: translateX(-28.57143%);
+  transform: translateX(-28.57143%);
 }
 .pianos.chinatown .slide-wrap > div {
-  -webkit-transform: translateX(-66.66667%);
-  -moz-transform: translateX(-66.66667%);
-  -ms-transform: translateX(-66.66667%);
-  -o-transform: translateX(-66.66667%);
-  transform: translateX(-66.66667%);
+  -webkit-transform: translateX(-42.85714%);
+  -moz-transform: translateX(-42.85714%);
+  -ms-transform: translateX(-42.85714%);
+  -o-transform: translateX(-42.85714%);
+  transform: translateX(-42.85714%);
+}
+.pianos.robson-park .slide-wrap > div {
+  -webkit-transform: translateX(-57.14286%);
+  -moz-transform: translateX(-57.14286%);
+  -ms-transform: translateX(-57.14286%);
+  -o-transform: translateX(-57.14286%);
+  transform: translateX(-57.14286%);
+}
+.pianos.library .slide-wrap > div {
+  -webkit-transform: translateX(-71.42857%);
+  -moz-transform: translateX(-71.42857%);
+  -ms-transform: translateX(-71.42857%);
+  -o-transform: translateX(-71.42857%);
+  transform: translateX(-71.42857%);
+}
+.pianos.olympic-village .slide-wrap > div {
+  -webkit-transform: translateX(-85.71429%);
+  -moz-transform: translateX(-85.71429%);
+  -ms-transform: translateX(-85.71429%);
+  -o-transform: translateX(-85.71429%);
+  transform: translateX(-85.71429%);
 }
 
 .scroll {
@@ -508,6 +485,14 @@ header {
   }
 }
 
+.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.olympic-village-piano {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .scene {
   height: 100%;
   background-position: center bottom;
@@ -519,11 +504,11 @@ header {
 .scene.canada-place-piano {
   background-image: url(../../images/pianos/canada-place-piano.svg);
 }
-.scene.cambie-bridge {
-  background-image: url(../../images/pianos/cambie-bridge.svg);
+.scene.spyglass {
+  background-image: url(../../images/pianos/spyglass.svg);
 }
-.scene.cambie-bridge-piano {
-  background-image: url(../../images/pianos/generic-piano.svg);
+.scene.spyglass-piano {
+  background-image: url(../../images/pianos/spyglass-piano.svg);
 }
 .scene.strathcona {
   background-image: url(../../images/pianos/strathcona.svg);
@@ -537,12 +522,23 @@ header {
 .scene.chinatown-piano {
   background-image: url(../../images/pianos/chinatown-piano.svg);
 }
-.scene.canada-place-piano, .scene.cambie-bridge-piano, .scene.strathcona-piano, .scene.chinatown-piano {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+.scene.robson-park {
+  background-image: url(../../images/pianos/robson-park.svg);
+}
+.scene.robson-park-piano {
+  background-image: url(../../images/pianos/robson-park-piano.svg);
+}
+.scene.library {
+  background-image: url(../../images/pianos/library.svg);
+}
+.scene.library-piano {
+  background-image: url(../../images/pianos/library-piano.svg);
+}
+.scene.olympic-village {
+  background-image: url(../../images/pianos/olympic-village.svg);
+}
+.scene.olympic-village-piano {
+  background-image: url(../../images/pianos/olympic-village-piano.svg);
 }
 
 .tagline {

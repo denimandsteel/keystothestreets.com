@@ -6,6 +6,10 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="canada-place-piano" sketch:type="MSArtboardGroup">
+            <g id="shadow" sketch:type="MSLayerGroup" transform="translate(473.000000, 653.000000)" fill="#999999">
+                <path d="M414.752,54.04 L75.056,54.04 C68.335,54.04 62.889,59.486 62.889,66.207 C62.889,72.927 68.335,78.375 75.056,78.375 L414.752,78.375 C421.473,78.375 426.92,72.927 426.92,66.207 C426.92,59.486 421.473,54.04 414.752,54.04" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M481.89,0.211 L12.24,0.211 C5.521,0.211 0.075,5.657 0.075,12.376 C0.075,19.096 5.521,24.543 12.24,24.543 L481.89,24.543 C488.61,24.543 494.057,19.096 494.057,12.376 C494.057,5.657 488.61,0.211 481.89,0.211" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            </g>
             <g id="piano" sketch:type="MSLayerGroup" transform="translate(484.000000, 473.000000)">
                 <g id="Group" sketch:type="MSShapeGroup">
                     <path d="M450.99,15.322 C450.99,6.943 444.197,0.15 435.818,0.15 L36.21,0.15 C27.831,0.15 21.039,6.942 21.039,15.322 L21.039,109.706 L450.99,109.706 L450.99,15.322 L450.99,15.322 Z" id="Shape" fill="#DFD7C1"></path>
