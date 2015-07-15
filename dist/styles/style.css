@@ -369,10 +369,10 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  width: 700%;
+  width: 1000%;
 }
 .slide-width .slide {
-  width: 14.28571%;
+  width: 10%;
 }
 
 .pianos .slide-wrap-slowest {
@@ -404,46 +404,67 @@ header {
   transform: translateX(0%);
 }
 .pianos.spyglass .slide-wrap > div {
-  -webkit-transform: translateX(-14.28571%);
-  -moz-transform: translateX(-14.28571%);
-  -ms-transform: translateX(-14.28571%);
-  -o-transform: translateX(-14.28571%);
-  transform: translateX(-14.28571%);
+  -webkit-transform: translateX(-10%);
+  -moz-transform: translateX(-10%);
+  -ms-transform: translateX(-10%);
+  -o-transform: translateX(-10%);
+  transform: translateX(-10%);
 }
 .pianos.strathcona .slide-wrap > div {
-  -webkit-transform: translateX(-28.57143%);
-  -moz-transform: translateX(-28.57143%);
-  -ms-transform: translateX(-28.57143%);
-  -o-transform: translateX(-28.57143%);
-  transform: translateX(-28.57143%);
+  -webkit-transform: translateX(-20%);
+  -moz-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  -o-transform: translateX(-20%);
+  transform: translateX(-20%);
 }
 .pianos.chinatown .slide-wrap > div {
-  -webkit-transform: translateX(-42.85714%);
-  -moz-transform: translateX(-42.85714%);
-  -ms-transform: translateX(-42.85714%);
-  -o-transform: translateX(-42.85714%);
-  transform: translateX(-42.85714%);
+  -webkit-transform: translateX(-30%);
+  -moz-transform: translateX(-30%);
+  -ms-transform: translateX(-30%);
+  -o-transform: translateX(-30%);
+  transform: translateX(-30%);
 }
 .pianos.robson-park .slide-wrap > div {
-  -webkit-transform: translateX(-57.14286%);
-  -moz-transform: translateX(-57.14286%);
-  -ms-transform: translateX(-57.14286%);
-  -o-transform: translateX(-57.14286%);
-  transform: translateX(-57.14286%);
+  -webkit-transform: translateX(-40%);
+  -moz-transform: translateX(-40%);
+  -ms-transform: translateX(-40%);
+  -o-transform: translateX(-40%);
+  transform: translateX(-40%);
 }
 .pianos.library .slide-wrap > div {
-  -webkit-transform: translateX(-71.42857%);
-  -moz-transform: translateX(-71.42857%);
-  -ms-transform: translateX(-71.42857%);
-  -o-transform: translateX(-71.42857%);
-  transform: translateX(-71.42857%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-.pianos.olympic-village .slide-wrap > div {
-  -webkit-transform: translateX(-85.71429%);
-  -moz-transform: translateX(-85.71429%);
-  -ms-transform: translateX(-85.71429%);
-  -o-transform: translateX(-85.71429%);
-  transform: translateX(-85.71429%);
+.pianos.creekside .slide-wrap > div {
+  -webkit-transform: translateX(-60%);
+  -moz-transform: translateX(-60%);
+  -ms-transform: translateX(-60%);
+  -o-transform: translateX(-60%);
+  transform: translateX(-60%);
+}
+.pianos.nelson .slide-wrap > div {
+  -webkit-transform: translateX(-70%);
+  -moz-transform: translateX(-70%);
+  -ms-transform: translateX(-70%);
+  -o-transform: translateX(-70%);
+  transform: translateX(-70%);
+}
+.pianos.lot-19 .slide-wrap > div {
+  -webkit-transform: translateX(-80%);
+  -moz-transform: translateX(-80%);
+  -ms-transform: translateX(-80%);
+  -o-transform: translateX(-80%);
+  transform: translateX(-80%);
+}
+.pianos.aquarium .slide-wrap > div {
+  -webkit-transform: translateX(-90%);
+  -moz-transform: translateX(-90%);
+  -ms-transform: translateX(-90%);
+  -o-transform: translateX(-90%);
+  transform: translateX(-90%);
 }
 
 .scroll {
@@ -485,7 +506,7 @@ header {
   }
 }
 
-.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.olympic-village-piano {
+.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano {
   position: absolute;
   left: 0;
   top: 0;
@@ -534,11 +555,29 @@ header {
 .scene.library-piano {
   background-image: url(../../images/pianos/library-piano.svg);
 }
-.scene.olympic-village {
-  background-image: url(../../images/pianos/olympic-village.svg);
+.scene.creekside {
+  background-image: url(../../images/pianos/creekside.svg);
 }
-.scene.olympic-village-piano {
-  background-image: url(../../images/pianos/olympic-village-piano.svg);
+.scene.creekside-piano {
+  background-image: url(../../images/pianos/creekside-piano.svg);
+}
+.scene.nelson {
+  background-image: url(../../images/pianos/nelson.svg);
+}
+.scene.nelson-piano {
+  background-image: url(../../images/pianos/nelson-piano.svg);
+}
+.scene.lot-19 {
+  background-image: url(../../images/pianos/lot-19.svg);
+}
+.scene.lot-19-piano {
+  background-image: url(../../images/pianos/lot-19-piano.svg);
+}
+.scene.aquarium {
+  background-image: url(../../images/pianos/aquarium.svg);
+}
+.scene.aquarium-piano {
+  background-image: url(../../images/pianos/aquarium-piano.svg);
 }
 
 .tagline {

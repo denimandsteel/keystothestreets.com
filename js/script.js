@@ -147,7 +147,10 @@ $(function() {
     'chinatown',
     'robson-park',
     'library',
-    'olympic-village',
+    'creekside',
+    'nelson',
+    'lot-19',
+    'aquarium',
   ];
   var index = 0;
 
