@@ -345,6 +345,7 @@ $(function() {
     'nelson',
     'lot-19',
     'aquarium',
+    'travelling',
   ];
   var index = 0;
 

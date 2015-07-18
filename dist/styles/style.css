@@ -369,10 +369,10 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  width: 1000%;
+  width: 1100%;
 }
 .slide-width .slide {
-  width: 10%;
+  width: 9.09091%;
 }
 
 .pianos .slide-wrap-slowest {
@@ -404,67 +404,74 @@ header {
   transform: translateX(0%);
 }
 .pianos.spyglass .slide-wrap > div {
-  -webkit-transform: translateX(-10%);
-  -moz-transform: translateX(-10%);
-  -ms-transform: translateX(-10%);
-  -o-transform: translateX(-10%);
-  transform: translateX(-10%);
+  -webkit-transform: translateX(-9.09091%);
+  -moz-transform: translateX(-9.09091%);
+  -ms-transform: translateX(-9.09091%);
+  -o-transform: translateX(-9.09091%);
+  transform: translateX(-9.09091%);
 }
 .pianos.strathcona .slide-wrap > div {
-  -webkit-transform: translateX(-20%);
-  -moz-transform: translateX(-20%);
-  -ms-transform: translateX(-20%);
-  -o-transform: translateX(-20%);
-  transform: translateX(-20%);
+  -webkit-transform: translateX(-18.18182%);
+  -moz-transform: translateX(-18.18182%);
+  -ms-transform: translateX(-18.18182%);
+  -o-transform: translateX(-18.18182%);
+  transform: translateX(-18.18182%);
 }
 .pianos.chinatown .slide-wrap > div {
-  -webkit-transform: translateX(-30%);
-  -moz-transform: translateX(-30%);
-  -ms-transform: translateX(-30%);
-  -o-transform: translateX(-30%);
-  transform: translateX(-30%);
+  -webkit-transform: translateX(-27.27273%);
+  -moz-transform: translateX(-27.27273%);
+  -ms-transform: translateX(-27.27273%);
+  -o-transform: translateX(-27.27273%);
+  transform: translateX(-27.27273%);
 }
 .pianos.robson-park .slide-wrap > div {
-  -webkit-transform: translateX(-40%);
-  -moz-transform: translateX(-40%);
-  -ms-transform: translateX(-40%);
-  -o-transform: translateX(-40%);
-  transform: translateX(-40%);
+  -webkit-transform: translateX(-36.36364%);
+  -moz-transform: translateX(-36.36364%);
+  -ms-transform: translateX(-36.36364%);
+  -o-transform: translateX(-36.36364%);
+  transform: translateX(-36.36364%);
 }
 .pianos.library .slide-wrap > div {
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-45.45455%);
+  -moz-transform: translateX(-45.45455%);
+  -ms-transform: translateX(-45.45455%);
+  -o-transform: translateX(-45.45455%);
+  transform: translateX(-45.45455%);
 }
 .pianos.creekside .slide-wrap > div {
-  -webkit-transform: translateX(-60%);
-  -moz-transform: translateX(-60%);
-  -ms-transform: translateX(-60%);
-  -o-transform: translateX(-60%);
-  transform: translateX(-60%);
+  -webkit-transform: translateX(-54.54545%);
+  -moz-transform: translateX(-54.54545%);
+  -ms-transform: translateX(-54.54545%);
+  -o-transform: translateX(-54.54545%);
+  transform: translateX(-54.54545%);
 }
 .pianos.nelson .slide-wrap > div {
-  -webkit-transform: translateX(-70%);
-  -moz-transform: translateX(-70%);
-  -ms-transform: translateX(-70%);
-  -o-transform: translateX(-70%);
-  transform: translateX(-70%);
+  -webkit-transform: translateX(-63.63636%);
+  -moz-transform: translateX(-63.63636%);
+  -ms-transform: translateX(-63.63636%);
+  -o-transform: translateX(-63.63636%);
+  transform: translateX(-63.63636%);
 }
 .pianos.lot-19 .slide-wrap > div {
-  -webkit-transform: translateX(-80%);
-  -moz-transform: translateX(-80%);
-  -ms-transform: translateX(-80%);
-  -o-transform: translateX(-80%);
-  transform: translateX(-80%);
+  -webkit-transform: translateX(-72.72727%);
+  -moz-transform: translateX(-72.72727%);
+  -ms-transform: translateX(-72.72727%);
+  -o-transform: translateX(-72.72727%);
+  transform: translateX(-72.72727%);
 }
 .pianos.aquarium .slide-wrap > div {
-  -webkit-transform: translateX(-90%);
-  -moz-transform: translateX(-90%);
-  -ms-transform: translateX(-90%);
-  -o-transform: translateX(-90%);
-  transform: translateX(-90%);
+  -webkit-transform: translateX(-81.81818%);
+  -moz-transform: translateX(-81.81818%);
+  -ms-transform: translateX(-81.81818%);
+  -o-transform: translateX(-81.81818%);
+  transform: translateX(-81.81818%);
+}
+.pianos.travelling .slide-wrap > div {
+  -webkit-transform: translateX(-90.90909%);
+  -moz-transform: translateX(-90.90909%);
+  -ms-transform: translateX(-90.90909%);
+  -o-transform: translateX(-90.90909%);
+  transform: translateX(-90.90909%);
 }
 
 .scroll {
@@ -506,7 +513,7 @@ header {
   }
 }
 
-.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano {
+.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.travelling-piano {
   position: absolute;
   left: 0;
   top: 0;
@@ -578,6 +585,12 @@ header {
 }
 .scene.aquarium-piano {
   background-image: url(../../images/pianos/aquarium-piano.svg);
+}
+.scene.travelling {
+  background-image: url(../../images/pianos/travelling.svg);
+}
+.scene.travelling-piano {
+  background-image: url(../../images/pianos/travelling-piano.svg);
 }
 
 .tagline {
