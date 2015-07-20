@@ -933,6 +933,12 @@ footer a {
 footer a:hover {
   color: #fab515;
 }
+footer a.ty-dale-cactus {
+  background: url(../../images/ty-dale-cactus.svg) left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3px 0 3px 15px;
+}
 
 .support .content, .scroll, .primary {
   -webkit-transform: translate3d(0, 0, 0);

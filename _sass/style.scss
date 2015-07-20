@@ -686,6 +686,12 @@ footer {
     &:hover {
       color: $yellow;
     }
+    &.ty-dale-cactus {
+      background: url(../../images/ty-dale-cactus.svg) left top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 3px 0 3px 15px;
+    }
   }
 }
 
