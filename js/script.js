@@ -123,23 +123,6 @@ $(function() {
     key_sounds['c2'].play();
   });
 
-  if (location.hash !== '') {
-    setTimeout(function() {
-      location.hash.replace('#', '').split(',').forEach(function(step, i) {
-        setTimeout(function() {
-          step.split('-').forEach(function(note) {
-            key_sounds[note].play();
-            fireANote();
-            $("#" + note).addClass('active');
-            setTimeout(function() {
-              $("#" + note).removeClass('active');
-            }, 250);
-          });
-        }, i * 500);
-      });
-    }, 2000);
-  }
-
   var pianos = [
     'canada-place',
     'spyglass',
@@ -152,8 +135,33 @@ $(function() {
     'lot-19',
     'aquarium',
     'travelling',
+    'map',
   ];
   var index = 0;
+
+  if (location.hash !== '') {
+    var hash = location.hash.replace('#', '');
+    if (pianos.indexOf(hash) >= 0) {
+      index = pianos.indexOf(hash);
+      $('.pianos').attr('class', 'pianos').addClass(hash);
+    }
+    else {
+      setTimeout(function() {
+        hash.split(',').forEach(function(step, i) {
+          setTimeout(function() {
+            step.split('-').forEach(function(note) {
+              key_sounds[note].play();
+              fireANote();
+              $("#" + note).addClass('active');
+              setTimeout(function() {
+                $("#" + note).removeClass('active');
+              }, 250);
+            });
+          }, i * 500);
+        });
+      }, 2000);
+    }
+  }
 
   $('.previous').click(function() {
     index = ( index + pianos.length - 1 ) % pianos.length;
@@ -164,7 +172,17 @@ $(function() {
     $('.pianos').attr('class', 'pianos').addClass(pianos[index % pianos.length]);
   });
 
-  $(".keyboard").click(function() {
+  $('.keyboard').click(function() {
     $(".keys").toggleClass('show-hints');
+  });
+
+  $('.location').click(function(event) {
+    if (event.target.tagName !== 'A') {
+      var piano = $(this).data('piano');
+      $('.pianos').attr('class', 'pianos').addClass(piano);
+      index = pianos.indexOf(piano);
+      // window.location.hash = piano;
+      return false;
+    }
   });
 });

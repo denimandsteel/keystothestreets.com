@@ -369,10 +369,10 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  width: 1100%;
+  width: 1200%;
 }
 .slide-width .slide {
-  width: 9.09091%;
+  width: 8.33333%;
 }
 
 .pianos .slide-wrap-slowest {
@@ -404,74 +404,81 @@ header {
   transform: translateX(0%);
 }
 .pianos.spyglass .slide-wrap > div {
-  -webkit-transform: translateX(-9.09091%);
-  -moz-transform: translateX(-9.09091%);
-  -ms-transform: translateX(-9.09091%);
-  -o-transform: translateX(-9.09091%);
-  transform: translateX(-9.09091%);
+  -webkit-transform: translateX(-8.33333%);
+  -moz-transform: translateX(-8.33333%);
+  -ms-transform: translateX(-8.33333%);
+  -o-transform: translateX(-8.33333%);
+  transform: translateX(-8.33333%);
 }
 .pianos.strathcona .slide-wrap > div {
-  -webkit-transform: translateX(-18.18182%);
-  -moz-transform: translateX(-18.18182%);
-  -ms-transform: translateX(-18.18182%);
-  -o-transform: translateX(-18.18182%);
-  transform: translateX(-18.18182%);
+  -webkit-transform: translateX(-16.66667%);
+  -moz-transform: translateX(-16.66667%);
+  -ms-transform: translateX(-16.66667%);
+  -o-transform: translateX(-16.66667%);
+  transform: translateX(-16.66667%);
 }
 .pianos.chinatown .slide-wrap > div {
-  -webkit-transform: translateX(-27.27273%);
-  -moz-transform: translateX(-27.27273%);
-  -ms-transform: translateX(-27.27273%);
-  -o-transform: translateX(-27.27273%);
-  transform: translateX(-27.27273%);
+  -webkit-transform: translateX(-25%);
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -o-transform: translateX(-25%);
+  transform: translateX(-25%);
 }
 .pianos.robson-park .slide-wrap > div {
-  -webkit-transform: translateX(-36.36364%);
-  -moz-transform: translateX(-36.36364%);
-  -ms-transform: translateX(-36.36364%);
-  -o-transform: translateX(-36.36364%);
-  transform: translateX(-36.36364%);
+  -webkit-transform: translateX(-33.33333%);
+  -moz-transform: translateX(-33.33333%);
+  -ms-transform: translateX(-33.33333%);
+  -o-transform: translateX(-33.33333%);
+  transform: translateX(-33.33333%);
 }
 .pianos.library .slide-wrap > div {
-  -webkit-transform: translateX(-45.45455%);
-  -moz-transform: translateX(-45.45455%);
-  -ms-transform: translateX(-45.45455%);
-  -o-transform: translateX(-45.45455%);
-  transform: translateX(-45.45455%);
+  -webkit-transform: translateX(-41.66667%);
+  -moz-transform: translateX(-41.66667%);
+  -ms-transform: translateX(-41.66667%);
+  -o-transform: translateX(-41.66667%);
+  transform: translateX(-41.66667%);
 }
 .pianos.creekside .slide-wrap > div {
-  -webkit-transform: translateX(-54.54545%);
-  -moz-transform: translateX(-54.54545%);
-  -ms-transform: translateX(-54.54545%);
-  -o-transform: translateX(-54.54545%);
-  transform: translateX(-54.54545%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .pianos.nelson .slide-wrap > div {
-  -webkit-transform: translateX(-63.63636%);
-  -moz-transform: translateX(-63.63636%);
-  -ms-transform: translateX(-63.63636%);
-  -o-transform: translateX(-63.63636%);
-  transform: translateX(-63.63636%);
+  -webkit-transform: translateX(-58.33333%);
+  -moz-transform: translateX(-58.33333%);
+  -ms-transform: translateX(-58.33333%);
+  -o-transform: translateX(-58.33333%);
+  transform: translateX(-58.33333%);
 }
 .pianos.lot-19 .slide-wrap > div {
-  -webkit-transform: translateX(-72.72727%);
-  -moz-transform: translateX(-72.72727%);
-  -ms-transform: translateX(-72.72727%);
-  -o-transform: translateX(-72.72727%);
-  transform: translateX(-72.72727%);
+  -webkit-transform: translateX(-66.66667%);
+  -moz-transform: translateX(-66.66667%);
+  -ms-transform: translateX(-66.66667%);
+  -o-transform: translateX(-66.66667%);
+  transform: translateX(-66.66667%);
 }
 .pianos.aquarium .slide-wrap > div {
-  -webkit-transform: translateX(-81.81818%);
-  -moz-transform: translateX(-81.81818%);
-  -ms-transform: translateX(-81.81818%);
-  -o-transform: translateX(-81.81818%);
-  transform: translateX(-81.81818%);
+  -webkit-transform: translateX(-75%);
+  -moz-transform: translateX(-75%);
+  -ms-transform: translateX(-75%);
+  -o-transform: translateX(-75%);
+  transform: translateX(-75%);
 }
 .pianos.travelling .slide-wrap > div {
-  -webkit-transform: translateX(-90.90909%);
-  -moz-transform: translateX(-90.90909%);
-  -ms-transform: translateX(-90.90909%);
-  -o-transform: translateX(-90.90909%);
-  transform: translateX(-90.90909%);
+  -webkit-transform: translateX(-83.33333%);
+  -moz-transform: translateX(-83.33333%);
+  -ms-transform: translateX(-83.33333%);
+  -o-transform: translateX(-83.33333%);
+  transform: translateX(-83.33333%);
+}
+.pianos.map .slide-wrap > div {
+  -webkit-transform: translateX(-91.66667%);
+  -moz-transform: translateX(-91.66667%);
+  -ms-transform: translateX(-91.66667%);
+  -o-transform: translateX(-91.66667%);
+  transform: translateX(-91.66667%);
 }
 
 .scroll {
@@ -513,7 +520,7 @@ header {
   }
 }
 
-.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.travelling-piano {
+.scene.canada-place-piano, .scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.travelling-piano, .scene.map-piano {
   position: absolute;
   left: 0;
   top: 0;
@@ -591,6 +598,83 @@ header {
 }
 .scene.travelling-piano {
   background-image: url(../../images/pianos/travelling-piano.svg);
+}
+.scene.map {
+  background-image: url(../../images/pianos/map.svg);
+}
+.scene.map-piano {
+  background-image: url(../../images/pianos/map-piano.svg);
+}
+
+@media screen and (max-width: 900px) {
+  .scene.map {
+    background-image: url(../../images/pianos/map-blank.jpg);
+  }
+}
+.scene.map-piano {
+  background-image: none;
+}
+
+@media screen and (min-width: 900px) {
+  .pianos.map .switcher {
+    margin: 0;
+    position: absolute;
+    right: 5%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .info-map {
+    width: 550px;
+    margin: 0;
+    position: absolute;
+    right: 5%;
+  }
+}
+.info-map .scroll {
+  height: 83.55556vw;
+  overflow: scroll;
+}
+@media screen and (min-width: 768px) {
+  .info-map .scroll {
+    height: 47vw;
+  }
+}
+.info-map .scroll h2 {
+  margin: 0;
+  text-align: center;
+}
+.info-map .scroll .location {
+  clear: both;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.info-map .scroll .location:hover {
+  background: #ffd;
+}
+.info-map .scroll .location::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.info-map .scroll .location img {
+  width: 25px;
+  float: left;
+}
+.info-map .scroll .location h3 {
+  margin: 3px 0 0;
+  margin-left: 35px;
+  text-align: left;
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
+}
+.info-map .scroll .location p {
+  margin: 0;
+  margin-left: 35px;
+  text-align: left;
+  font-size: 0.8125rem;
+  line-height: 1rem;
 }
 
 .tagline {

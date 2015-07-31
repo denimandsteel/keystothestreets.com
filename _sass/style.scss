@@ -338,6 +338,7 @@ $pianos: (
   lot-19,
   aquarium,
   travelling,
+  map,
 );
 $num: length($pianos);
 
@@ -474,6 +475,71 @@ $num: length($pianos);
     }
   }
 
+}
+.scene.map {
+  @include media(max-width 900px) {
+    background-image:url(../../images/pianos/map-blank.jpg);
+  }
+  &-piano {
+    background-image: none;
+  }
+}
+.pianos.map {
+  .switcher-center {}
+  @include media(min-width 900px) {
+    .switcher {
+      margin: 0;
+      position: absolute;
+      right: 5%;
+    }
+  }
+}
+.info-map {
+  @include media(min-width 900px) {
+    width: 550px;
+    margin: 0;
+    position: absolute;
+    right: 5%;
+  }
+  .scroll {
+    height: 160vw * (752/1440); // We can be a pixel off sometimes.
+    overflow: scroll;
+    @include media($tablet) {
+      height: 90vw * (752/1440); // We can be a pixel off sometimes.
+    }
+    h2 {
+      margin: 0;
+      text-align: center;
+    }
+    .location {
+      clear: both;
+      padding: 3px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: #ffd;
+      }
+      @include clearfix;
+      img {
+        width: 25px;
+        float: left;
+      }
+      h3 {
+        margin: 3px 0 0;
+        margin-left: 35px;
+        text-align: left;
+        font-size: rem(15px);
+        line-height: rem(17px);
+      }
+      p {
+        margin: 0;
+        margin-left: 35px;
+        text-align: left;
+        font-size: rem(13px);
+        line-height: rem(16px);
+      }
+    }
+  }
 }
 
 .tagline {
