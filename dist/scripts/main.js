@@ -379,4 +379,9 @@ $(function() {
       return false;
     }
   });
+  
+  $('.map-link').click(function() {
+    $('.pianos').attr('class', 'pianos').addClass('map');
+    index = pianos.indexOf('map');
+  });
 });

@@ -190,14 +190,24 @@ header {
 @media screen and (min-width: 768px) {
   .primary ul li {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .primary ul li {
     margin-left: 30px;
   }
 }
 .primary ul li a {
-  padding: 10px;
   color: #fff;
   text-decoration: none;
-  font-size: 1.125rem;
+  padding: 8px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 375px) {
+  .primary ul li a {
+    padding: 10px;
+    font-size: 1.125rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .primary ul li a {
@@ -206,6 +216,15 @@ header {
 }
 .primary ul li a:hover {
   color: #fab515;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .hide-on-mobile {
+    display: initial;
+  }
 }
 
 .social {

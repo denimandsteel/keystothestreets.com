@@ -153,13 +153,19 @@ header {
       margin-left: 8px;
       @include media($tablet) {
         margin-top: 20px;
+      }
+      @include media(min-width 800px) {
         margin-left: 30px;
       }
       a {
-        padding: 10px;
         color: $white;
         text-decoration: none;
-        font-size: rem(18);
+        padding: 8px;
+        font-size: rem(16);
+        @include media(min-width 375px) {
+          padding: 10px;
+          font-size: rem(18);
+        }
         @include media($tablet) {
           font-size: rem(20);
         }
@@ -168,6 +174,13 @@ header {
         }
       }
     }
+  }
+}
+
+.hide-on-mobile {
+  display: none;
+  @include media(min-width 400px) {
+    display: initial;
   }
 }
 
