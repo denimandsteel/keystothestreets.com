@@ -124,7 +124,6 @@ $(function() {
   });
 
   var pianos = [
-    'canada-place',
     'spyglass',
     'strathcona',
     'chinatown',
