@@ -667,9 +667,11 @@ header {
   clear: both;
   padding: 3px 10px;
   border-radius: 5px;
+}
+.info-map .scroll .location[data-piano] {
   cursor: pointer;
 }
-.info-map .scroll .location:hover {
+.info-map .scroll .location[data-piano]:hover {
   background: #ffd;
 }
 .info-map .scroll .location::after {

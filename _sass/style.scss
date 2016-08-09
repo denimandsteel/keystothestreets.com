@@ -528,9 +528,11 @@ $num: length($pianos);
       clear: both;
       padding: 3px 10px;
       border-radius: 5px;
-      cursor: pointer;
-      &:hover {
-        background: #ffd;
+      &[data-piano] {
+        cursor: pointer;
+        &:hover {
+          background: #ffd;
+        }
       }
       @include clearfix;
       img {

@@ -179,9 +179,10 @@ $(function() {
   $('.location').click(function(event) {
     if (event.target.tagName !== 'A') {
       var piano = $(this).data('piano');
-      $('.pianos').attr('class', 'pianos').addClass(piano);
-      index = pianos.indexOf(piano);
-      // window.location.hash = piano;
+      if (piano) {
+        $('.pianos').attr('class', 'pianos').addClass(piano);
+        index = pianos.indexOf(piano);
+      }
       return false;
     }
   });
