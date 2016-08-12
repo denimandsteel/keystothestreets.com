@@ -133,6 +133,10 @@ $(function() {
     'nelson',
     'lot-19',
     'aquarium',
+    'orpheum',
+    'oceanic',
+    'woodwards',
+    'cathedral',
     'travelling',
     'map',
   ];
