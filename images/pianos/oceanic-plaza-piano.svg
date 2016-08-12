@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="752px" viewBox="0 0 1440 752" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>oceanic-plaza-piano</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M73.437,0.346528261 C37.0608618,4.41589774 8.84668898,8.79189159 0.399,10.1464374 L0.399,85.0236 L73.437,85.0236 L73.437,0.346528261 L73.437,0.346528261 Z" id="path-1"></path>
+        <path d="M0.1201,90.143 L57.2191,90.143 L57.2191,0.321848917 C36.6369723,2.06511811 17.1027432,4.18577194 0.1201,6.25256628 L0.1201,90.143 L0.1201,90.143 Z" id="path-3"></path>
+        <path d="M0.9764,94.143 L74.0144,94.143 L74.0144,0.640473755 C67.4828259,0.47304879 60.9959629,0.383 54.598,0.383 C37.0879973,0.383 18.912196,1.05747658 0.9764,2.14665329 L0.9764,94.143 L0.9764,94.143 Z" id="path-5"></path>
+        <path d="M57.7964,2.56495967 C38.7970178,1.30265043 19.4007127,0.473468618 0.697322581,0.38996019 L0.6974,93.0998 L57.7964,93.0998 L57.7964,2.56495967 L57.7964,2.56495967 Z" id="path-7"></path>
+        <path d="M73.677,8.69905466 C54.6843833,6.08762109 28.952207,2.87899182 0.639006901,0.265760311 L0.639,86.2467 L73.677,86.2467 L73.677,8.69905466 L73.677,8.69905466 Z" id="path-9"></path>
+        <path d="M57.459,9.88369984 C55.1246482,8.41776837 52.3628386,7.57 49.403,7.57 C49.403,7.57 29.8338722,4.30122955 0.36,0.535260209 L0.36,78.4171 L57.459,78.4171 L57.459,9.88369984 L57.459,9.88369984 Z" id="path-11"></path>
+        <polygon id="path-13" points="491.571 25.0996 491.571 0.7666 0.0003 0.7666 0.0003 25.0996 491.571 25.0996"></polygon>
+        <polygon id="path-15" points="0 298 491.571 298 491.571 0.125 0 0.125"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="oceanic-plaza-piano">
+            <g id="Page-1" transform="translate(474.000000, 453.000000)">
+                <path d="M460.574,64.6177 C460.574,56.2387 453.782,49.4457 445.403,49.4457 C445.403,49.4457 336.523,31.2577 245.598,31.2577 C154.673,31.2577 45.795,49.4457 45.795,49.4457 C37.415,49.4457 30.623,56.2387 30.623,64.6177 L30.623,125.0167 L460.574,125.0167 L460.574,64.6177 Z" id="Fill-1" fill="#B1DBF6"></path>
+                <g id="Group-21" transform="translate(48.000000, 30.875000)">
+                    <g id="Group-5" transform="translate(0.000000, 8.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <polygon id="Fill-3" fill="#E0F1FB" mask="url(#mask-2)" points="32.128 85.0236 0.399 73.0106 41.707 -36.0984 73.437 -24.0854"></polygon>
+                    </g>
+                    <g id="Group-8" transform="translate(57.000000, 4.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-7"></g>
+                        <polygon id="Fill-6" fill="#E0F1FB" mask="url(#mask-4)" points="15.9101 90.194 0.1201 84.216 41.4291 -24.893 57.2191 -18.915"></polygon>
+                    </g>
+                    <g id="Group-11" transform="translate(143.000000, 0.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-10"></g>
+                        <polygon id="Fill-9" fill="#E0F1FB" mask="url(#mask-6)" points="32.7054 94.9294 0.9764 82.9164 42.2844 -26.1926 74.0144 -14.1796"></polygon>
+                    </g>
+                    <g id="Group-14" transform="translate(200.000000, 0.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Clip-13"></g>
+                        <polygon id="Fill-12" fill="#E0F1FB" mask="url(#mask-8)" points="16.4874 93.0998 0.6974 87.1218 42.0064 -21.9872 57.7964 -16.0092"></polygon>
+                    </g>
+                    <g id="Group-17" transform="translate(291.000000, 5.000000)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="Clip-16"></g>
+                        <polygon id="Fill-15" fill="#E0F1FB" mask="url(#mask-10)" points="32.368 86.2467 0.639 74.2337 41.947 -34.8753 73.677 -22.8623"></polygon>
+                    </g>
+                    <g id="Group-20" transform="translate(348.000000, 11.000000)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="Clip-19"></g>
+                        <polygon id="Fill-18" fill="#E0F1FB" mask="url(#mask-12)" points="16.15 78.4171 0.36 72.4391 41.669 -36.6699 57.459 -30.6919"></polygon>
+                    </g>
+                </g>
+                <g id="Group-54" transform="translate(0.000000, 0.875000)">
+                    <g id="Group-24" transform="translate(0.000000, 219.000000)">
+                        <mask id="mask-14" fill="white">
+                            <use xlink:href="#path-13"></use>
+                        </mask>
+                        <g id="Clip-23"></g>
+                        <path d="M491.5713,12.9336 C491.5713,6.2136 486.1233,0.7666 479.4053,0.7666 L12.1673,0.7666 C5.4473,0.7666 0.0003,6.2136 0.0003,12.9336 C0.0003,19.6526 5.4473,25.0996 12.1673,25.0996 L479.4053,25.0996 C486.1233,25.0996 491.5713,19.6526 491.5713,12.9336" id="Fill-22" fill="#B2B2B2" mask="url(#mask-14)"></path>
+                    </g>
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <g id="Clip-26"></g>
+                    <polygon id="Fill-25" fill="#2A5C70" mask="url(#mask-16)" points="30.623 231.933 460.574 231.933 460.574 144.709 30.623 144.709"></polygon>
+                    <polygon id="Fill-27" fill="#91E8FF" mask="url(#mask-16)" points="30.623 150.193 460.574 150.193 460.574 128.586 30.623 128.586"></polygon>
+                    <polygon id="Fill-28" fill="#91E8FF" mask="url(#mask-16)" points="16.042 231.933 39.437 231.933 39.437 117.054 16.042 117.054"></polygon>
+                    <polygon id="Fill-29" fill="#91E8FF" mask="url(#mask-16)" points="451.761 231.933 475.154 231.933 475.154 117.054 451.761 117.054"></polygon>
+                    <path d="M427.6143,285.834 C427.6143,279.114 422.1673,273.667 415.4483,273.667 L75.7503,273.667 C69.0303,273.667 63.5833,279.114 63.5833,285.834 C63.5833,292.553 69.0303,298 75.7503,298 L415.4483,298 C422.1673,298 427.6143,292.553 427.6143,285.834" id="Fill-30" fill="#B2B2B2" mask="url(#mask-16)"></path>
+                    <polygon id="Fill-31" fill="#91E8FF" mask="url(#mask-16)" points="78.798 239.223 412.398 239.223 412.398 203.8 78.798 203.8"></polygon>
+                    <polygon id="Fill-32" fill="#91E8FF" mask="url(#mask-16)" points="78.799 285.834 99.469 285.834 99.469 212.225 78.799 212.225"></polygon>
+                    <polygon id="Fill-33" fill="#91E8FF" mask="url(#mask-16)" points="391.728 285.834 412.398 285.834 412.398 212.225 391.728 212.225"></polygon>
+                    <path d="M419.8985,193.1807 C419.8985,191.0487 418.1705,189.3217 416.0395,189.3217 L75.1575,189.3217 C73.0265,189.3217 71.2985,191.0487 71.2985,193.1807 L71.2985,214.4187 C71.2985,216.5507 73.0265,218.2787 75.1575,218.2787 L416.0395,218.2787 C418.1705,218.2787 419.8985,216.5507 419.8985,214.4187 L419.8985,193.1807 Z" id="Fill-34" fill="#FFFFFF" mask="url(#mask-16)"></path>
+                    <polygon id="Fill-35" fill="#FFFFFF" mask="url(#mask-16)" points="302.432 96.304 338.765 96.304 338.765 52.753 302.432 52.753"></polygon>
+                    <polygon id="Fill-36" fill="#323232" mask="url(#mask-16)" points="306.015 59.286 335.182 59.286 335.182 56.436 306.015 56.436"></polygon>
+                    <polygon id="Fill-37" fill="#323232" mask="url(#mask-16)" points="306.015 64.939 335.182 64.939 335.182 62.09 306.015 62.09"></polygon>
+                    <polygon id="Fill-38" fill="#323232" mask="url(#mask-16)" points="306.015 70.593 335.182 70.593 335.182 67.744 306.015 67.744"></polygon>
+                    <polygon id="Fill-39" fill="#323232" mask="url(#mask-16)" points="306.015 76.248 335.182 76.248 335.182 73.398 306.015 73.398"></polygon>
+                    <polygon id="Fill-40" fill="#323232" mask="url(#mask-16)" points="306.015 81.902 335.182 81.902 335.182 79.052 306.015 79.052"></polygon>
+                    <polygon id="Fill-41" fill="#323232" mask="url(#mask-16)" points="306.015 87.555 335.182 87.555 335.182 84.706 306.015 84.706"></polygon>
+                    <polygon id="Fill-42" fill="#323232" mask="url(#mask-16)" points="306.015 93.209 335.182 93.209 335.182 90.36 306.015 90.36"></polygon>
+                    <polygon id="Fill-43" fill="#FFFFFF" mask="url(#mask-16)" points="118.639 104.093 154.972 104.093 154.972 60.542 118.639 60.542"></polygon>
+                    <polygon id="Fill-44" fill="#323232" mask="url(#mask-16)" points="122.222 67.075 151.389 67.075 151.389 64.225 122.222 64.225"></polygon>
+                    <polygon id="Fill-45" fill="#323232" mask="url(#mask-16)" points="122.222 72.728 151.389 72.728 151.389 69.879 122.222 69.879"></polygon>
+                    <polygon id="Fill-46" fill="#323232" mask="url(#mask-16)" points="122.222 78.382 151.389 78.382 151.389 75.533 122.222 75.533"></polygon>
+                    <polygon id="Fill-47" fill="#323232" mask="url(#mask-16)" points="122.222 84.037 151.389 84.037 151.389 81.187 122.222 81.187"></polygon>
+                    <polygon id="Fill-48" fill="#323232" mask="url(#mask-16)" points="122.222 89.691 151.389 89.691 151.389 86.841 122.222 86.841"></polygon>
+                    <polygon id="Fill-49" fill="#323232" mask="url(#mask-16)" points="122.222 95.344 151.389 95.344 151.389 92.495 122.222 92.495"></polygon>
+                    <polygon id="Fill-50" fill="#323232" mask="url(#mask-16)" points="122.222 100.999 151.389 100.999 151.389 98.15 122.222 98.15"></polygon>
+                    <path d="M481.087,100.1631 C481.087,98.0311 479.359,96.3041 477.228,96.3041 L13.97,96.3041 C11.838,96.3041 10.11,98.0311 10.11,100.1631 L10.11,124.7261 C10.11,126.8581 11.838,128.5861 13.97,128.5861 L476.836,128.5861 C479.184,128.5861 481.087,126.6831 481.087,124.3341 L481.087,100.1631 Z" id="Fill-51" fill="#28D2FF" mask="url(#mask-16)"></path>
+                    <path d="M442.5987,118.585 L47.0887,118.585 L47.0887,114.163 C47.0887,112.031 48.8167,110.304 50.9487,110.304 L438.7397,110.304 C440.8707,110.304 442.5987,112.031 442.5987,114.163 L442.5987,118.585 Z" id="Fill-52" fill="#000000" mask="url(#mask-16)"></path>
+                    <path d="M457.0889,122.502 C457.0889,120.34 455.3609,118.586 453.2299,118.586 L36.4569,118.586 C34.3259,118.586 32.5989,120.34 32.5989,122.502 L32.5989,128.586 L457.0889,128.586 L457.0889,122.502 Z" id="Fill-53" fill="#FFFFFF" mask="url(#mask-16)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
