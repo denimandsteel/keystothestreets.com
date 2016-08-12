@@ -484,7 +484,7 @@ header {
   -o-transform: translateX(-60%);
   transform: translateX(-60%);
 }
-.pianos.oceanic .slide-wrap > div {
+.pianos.oceanic-plaza .slide-wrap > div {
   -webkit-transform: translateX(-66.66667%);
   -moz-transform: translateX(-66.66667%);
   -ms-transform: translateX(-66.66667%);
@@ -559,7 +559,7 @@ header {
   }
 }
 
-.scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.orpheum-piano, .scene.oceanic-piano, .scene.woodwards-piano, .scene.cathedral-piano, .scene.travelling-piano, .scene.map-piano {
+.scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.orpheum-piano, .scene.oceanic-plaza-piano, .scene.woodwards-piano, .scene.cathedral-piano, .scene.travelling-piano, .scene.map-piano {
   position: absolute;
   left: 0;
   top: 0;
@@ -632,11 +632,11 @@ header {
 .scene.orpheum-piano {
   background-image: url(../../images/pianos/orpheum-piano.svg);
 }
-.scene.oceanic {
-  background-image: url(../../images/pianos/oceanic.svg);
+.scene.oceanic-plaza {
+  background-image: url(../../images/pianos/oceanic-plaza.svg);
 }
-.scene.oceanic-piano {
-  background-image: url(../../images/pianos/oceanic-piano.svg);
+.scene.oceanic-plaza-piano {
+  background-image: url(../../images/pianos/oceanic-plaza-piano.svg);
 }
 .scene.woodwards {
   background-image: url(../../images/pianos/woodwards.svg);

@@ -328,7 +328,7 @@ $(function() {
     'lot-19',
     'aquarium',
     'orpheum',
-    'oceanic',
+    'oceanic-plaza',
     'woodwards',
     'cathedral',
     'travelling',
