@@ -341,20 +341,20 @@ header {
 
 $pianos: (
   // canada-place,
-  spyglass,
-  strathcona,
-  chinatown,
-  robson-park,
-  library,
-  creekside,
-  nelson,
-  lot-19,
-  aquarium,
+  // spyglass,
+  // strathcona,
+  // chinatown,
+  // robson-park,
+  // library,
+  // creekside,
+  // nelson,
+  // lot-19,
+  // aquarium,
   orpheum,
-  oceanic-plaza,
+  // oceanic-plaza,
   woodwards,
-  cathedral,
-  travelling,
+  // cathedral,
+  // travelling,
   map,
 );
 $num: length($pianos);
@@ -519,10 +519,13 @@ $num: length($pianos);
     right: 5%;
   }
   .scroll {
-    height: 160vw * (752/1440); // We can be a pixel off sometimes.
+    // height: 160vw * (752/1440); // We can be a pixel off sometimes.
+    height: 70vw * (752/1440); // We can be a pixel off sometimes.
     overflow: scroll;
     @include media($tablet) {
-      height: 90vw * (752/1440); // We can be a pixel off sometimes.
+      // height: 90vw * (752/1440); // We can be a pixel off sometimes.
+      height: 40vw * (752/1440); // We can be a pixel off sometimes.
+
     }
     h2 {
       margin: 0;

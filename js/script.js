@@ -124,20 +124,20 @@ $(function() {
   });
 
   var pianos = [
-    'spyglass',
-    'strathcona',
-    'chinatown',
-    'robson-park',
-    'library',
-    'creekside',
-    'nelson',
-    'lot-19',
-    'aquarium',
+    // 'spyglass',
+    // 'strathcona',
+    // 'chinatown',
+    // 'robson-park',
+    // 'library',
+    // 'creekside',
+    // 'nelson',
+    // 'lot-19',
+    // 'aquarium',
     'orpheum',
-    'oceanic',
+    // 'oceanic',
     'woodwards',
-    'cathedral',
-    'travelling',
+    // 'cathedral',
+    // 'travelling',
     'map',
   ];
   var index = 0;

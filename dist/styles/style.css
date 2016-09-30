@@ -387,10 +387,10 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  width: 1500%;
+  width: 300%;
 }
 .slide-width .slide {
-  width: 6.66667%;
+  width: 33.33333%;
 }
 
 .pianos .slide-wrap-slowest {
@@ -414,110 +414,26 @@ header {
   -moz-transition: -moz-transform 0.75s ease-in-out;
   transition: transform 0.75s ease-in-out;
 }
-.pianos.spyglass .slide-wrap > div {
+.pianos.orpheum .slide-wrap > div {
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
 }
-.pianos.strathcona .slide-wrap > div {
-  -webkit-transform: translateX(-6.66667%);
-  -moz-transform: translateX(-6.66667%);
-  -ms-transform: translateX(-6.66667%);
-  -o-transform: translateX(-6.66667%);
-  transform: translateX(-6.66667%);
-}
-.pianos.chinatown .slide-wrap > div {
-  -webkit-transform: translateX(-13.33333%);
-  -moz-transform: translateX(-13.33333%);
-  -ms-transform: translateX(-13.33333%);
-  -o-transform: translateX(-13.33333%);
-  transform: translateX(-13.33333%);
-}
-.pianos.robson-park .slide-wrap > div {
-  -webkit-transform: translateX(-20%);
-  -moz-transform: translateX(-20%);
-  -ms-transform: translateX(-20%);
-  -o-transform: translateX(-20%);
-  transform: translateX(-20%);
-}
-.pianos.library .slide-wrap > div {
-  -webkit-transform: translateX(-26.66667%);
-  -moz-transform: translateX(-26.66667%);
-  -ms-transform: translateX(-26.66667%);
-  -o-transform: translateX(-26.66667%);
-  transform: translateX(-26.66667%);
-}
-.pianos.creekside .slide-wrap > div {
+.pianos.woodwards .slide-wrap > div {
   -webkit-transform: translateX(-33.33333%);
   -moz-transform: translateX(-33.33333%);
   -ms-transform: translateX(-33.33333%);
   -o-transform: translateX(-33.33333%);
   transform: translateX(-33.33333%);
 }
-.pianos.nelson .slide-wrap > div {
-  -webkit-transform: translateX(-40%);
-  -moz-transform: translateX(-40%);
-  -ms-transform: translateX(-40%);
-  -o-transform: translateX(-40%);
-  transform: translateX(-40%);
-}
-.pianos.lot-19 .slide-wrap > div {
-  -webkit-transform: translateX(-46.66667%);
-  -moz-transform: translateX(-46.66667%);
-  -ms-transform: translateX(-46.66667%);
-  -o-transform: translateX(-46.66667%);
-  transform: translateX(-46.66667%);
-}
-.pianos.aquarium .slide-wrap > div {
-  -webkit-transform: translateX(-53.33333%);
-  -moz-transform: translateX(-53.33333%);
-  -ms-transform: translateX(-53.33333%);
-  -o-transform: translateX(-53.33333%);
-  transform: translateX(-53.33333%);
-}
-.pianos.orpheum .slide-wrap > div {
-  -webkit-transform: translateX(-60%);
-  -moz-transform: translateX(-60%);
-  -ms-transform: translateX(-60%);
-  -o-transform: translateX(-60%);
-  transform: translateX(-60%);
-}
-.pianos.oceanic-plaza .slide-wrap > div {
+.pianos.map .slide-wrap > div {
   -webkit-transform: translateX(-66.66667%);
   -moz-transform: translateX(-66.66667%);
   -ms-transform: translateX(-66.66667%);
   -o-transform: translateX(-66.66667%);
   transform: translateX(-66.66667%);
-}
-.pianos.woodwards .slide-wrap > div {
-  -webkit-transform: translateX(-73.33333%);
-  -moz-transform: translateX(-73.33333%);
-  -ms-transform: translateX(-73.33333%);
-  -o-transform: translateX(-73.33333%);
-  transform: translateX(-73.33333%);
-}
-.pianos.cathedral .slide-wrap > div {
-  -webkit-transform: translateX(-80%);
-  -moz-transform: translateX(-80%);
-  -ms-transform: translateX(-80%);
-  -o-transform: translateX(-80%);
-  transform: translateX(-80%);
-}
-.pianos.travelling .slide-wrap > div {
-  -webkit-transform: translateX(-86.66667%);
-  -moz-transform: translateX(-86.66667%);
-  -ms-transform: translateX(-86.66667%);
-  -o-transform: translateX(-86.66667%);
-  transform: translateX(-86.66667%);
-}
-.pianos.map .slide-wrap > div {
-  -webkit-transform: translateX(-93.33333%);
-  -moz-transform: translateX(-93.33333%);
-  -ms-transform: translateX(-93.33333%);
-  -o-transform: translateX(-93.33333%);
-  transform: translateX(-93.33333%);
 }
 
 .scroll {
@@ -559,7 +475,7 @@ header {
   }
 }
 
-.scene.spyglass-piano, .scene.strathcona-piano, .scene.chinatown-piano, .scene.robson-park-piano, .scene.library-piano, .scene.creekside-piano, .scene.nelson-piano, .scene.lot-19-piano, .scene.aquarium-piano, .scene.orpheum-piano, .scene.oceanic-plaza-piano, .scene.woodwards-piano, .scene.cathedral-piano, .scene.travelling-piano, .scene.map-piano {
+.scene.orpheum-piano, .scene.woodwards-piano, .scene.map-piano {
   position: absolute;
   left: 0;
   top: 0;
@@ -572,89 +488,17 @@ header {
   background-position: center bottom;
   background-size: cover;
 }
-.scene.spyglass {
-  background-image: url(../../images/pianos/spyglass.svg);
-}
-.scene.spyglass-piano {
-  background-image: url(../../images/pianos/spyglass-piano.svg);
-}
-.scene.strathcona {
-  background-image: url(../../images/pianos/strathcona.svg);
-}
-.scene.strathcona-piano {
-  background-image: url(../../images/pianos/strathcona-piano.svg);
-}
-.scene.chinatown {
-  background-image: url(../../images/pianos/chinatown.svg);
-}
-.scene.chinatown-piano {
-  background-image: url(../../images/pianos/chinatown-piano.svg);
-}
-.scene.robson-park {
-  background-image: url(../../images/pianos/robson-park.svg);
-}
-.scene.robson-park-piano {
-  background-image: url(../../images/pianos/robson-park-piano.svg);
-}
-.scene.library {
-  background-image: url(../../images/pianos/library.svg);
-}
-.scene.library-piano {
-  background-image: url(../../images/pianos/library-piano.svg);
-}
-.scene.creekside {
-  background-image: url(../../images/pianos/creekside.svg);
-}
-.scene.creekside-piano {
-  background-image: url(../../images/pianos/creekside-piano.svg);
-}
-.scene.nelson {
-  background-image: url(../../images/pianos/nelson.svg);
-}
-.scene.nelson-piano {
-  background-image: url(../../images/pianos/nelson-piano.svg);
-}
-.scene.lot-19 {
-  background-image: url(../../images/pianos/lot-19.svg);
-}
-.scene.lot-19-piano {
-  background-image: url(../../images/pianos/lot-19-piano.svg);
-}
-.scene.aquarium {
-  background-image: url(../../images/pianos/aquarium.svg);
-}
-.scene.aquarium-piano {
-  background-image: url(../../images/pianos/aquarium-piano.svg);
-}
 .scene.orpheum {
   background-image: url(../../images/pianos/orpheum.svg);
 }
 .scene.orpheum-piano {
   background-image: url(../../images/pianos/orpheum-piano.svg);
 }
-.scene.oceanic-plaza {
-  background-image: url(../../images/pianos/oceanic-plaza.svg);
-}
-.scene.oceanic-plaza-piano {
-  background-image: url(../../images/pianos/oceanic-plaza-piano.svg);
-}
 .scene.woodwards {
   background-image: url(../../images/pianos/woodwards.svg);
 }
 .scene.woodwards-piano {
   background-image: url(../../images/pianos/woodwards-piano.svg);
-}
-.scene.cathedral {
-  background-image: url(../../images/pianos/cathedral.svg);
-}
-.scene.cathedral-piano {
-  background-image: url(../../images/pianos/cathedral-piano.svg);
-}
-.scene.travelling {
-  background-image: url(../../images/pianos/travelling.svg);
-}
-.scene.travelling-piano {
-  background-image: url(../../images/pianos/travelling-piano.svg);
 }
 .scene.map {
   background-image: url(../../images/pianos/map.svg);
@@ -689,12 +533,12 @@ header {
   }
 }
 .info-map .scroll {
-  height: 83.55556vw;
+  height: 36.55556vw;
   overflow: scroll;
 }
 @media screen and (min-width: 768px) {
   .info-map .scroll {
-    height: 47vw;
+    height: 20.88889vw;
   }
 }
 .info-map .scroll h2 {

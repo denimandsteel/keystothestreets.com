@@ -318,20 +318,8 @@ $(function() {
   });
 
   var pianos = [
-    'spyglass',
-    'strathcona',
-    'chinatown',
-    'robson-park',
-    'library',
-    'creekside',
-    'nelson',
-    'lot-19',
-    'aquarium',
     'orpheum',
-    'oceanic-plaza',
     'woodwards',
-    'cathedral',
-    'travelling',
     'map',
   ];
   var index = 0;
