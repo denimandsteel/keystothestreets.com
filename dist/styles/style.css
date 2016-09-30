@@ -533,12 +533,12 @@ header {
   }
 }
 .info-map .scroll {
-  height: 36.55556vw;
+  height: 47vw;
   overflow: scroll;
 }
 @media screen and (min-width: 768px) {
   .info-map .scroll {
-    height: 22.45556vw;
+    height: 26.11111vw;
   }
 }
 .info-map .scroll h2 {
@@ -929,6 +929,16 @@ footer a.ty-dale-cactus {
 
 .support .content, .scroll, .primary {
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+.finished {
+  background-color: #f1b935;
+  height: 45vh;
+  display: flex;
+}
+
+.finished-center {
+  align-self: center;
 }
 
 .keys {

@@ -520,11 +520,11 @@ $num: length($pianos);
   }
   .scroll {
     // height: 160vw * (752/1440); // We can be a pixel off sometimes.
-    height: 70vw * (752/1440); // We can be a pixel off sometimes.
+    height: 90vw * (752/1440); // We can be a pixel off sometimes.
     overflow: scroll;
     @include media($tablet) {
       // height: 90vw * (752/1440); // We can be a pixel off sometimes.
-      height: 43vw * (752/1440); // We can be a pixel off sometimes.
+      height: 50vw * (752/1440); // We can be a pixel off sometimes.
 
     }
     h2 {
@@ -786,6 +786,16 @@ footer {
 // Prevent flicker in Safari.
 .support .content, .scroll, .primary {
  -webkit-transform:translate3d(0,0,0);
+}
+
+// Finished for the year header
+.finished {
+  background-color: #f1b935; 
+  height: 45vh; 
+  display: flex;
+}
+.finished-center {
+  align-self: center;
 }
 
 @import "_keys";
