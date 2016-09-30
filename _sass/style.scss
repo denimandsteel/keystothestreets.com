@@ -524,7 +524,7 @@ $num: length($pianos);
     overflow: scroll;
     @include media($tablet) {
       // height: 90vw * (752/1440); // We can be a pixel off sometimes.
-      height: 40vw * (752/1440); // We can be a pixel off sometimes.
+      height: 43vw * (752/1440); // We can be a pixel off sometimes.
 
     }
     h2 {
